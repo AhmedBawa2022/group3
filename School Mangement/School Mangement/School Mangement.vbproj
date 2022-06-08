@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Assigning teachers to classes.Designer.vb">
+      <DependentUpon>Assigning teachers to classes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Assigning teachers to classes.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     <Compile Include="Forms\ggggg.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Management of the people%27s classroom.Designer.vb">
+      <DependentUpon>Management of the people%27s classroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management of the people%27s classroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -106,6 +118,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Assigning teachers to classes.resx">
+      <DependentUpon>Assigning teachers to classes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ggggg.resx">
       <DependentUpon>ggggg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management of the people%27s classroom.resx">
+      <DependentUpon>Management of the people%27s classroom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

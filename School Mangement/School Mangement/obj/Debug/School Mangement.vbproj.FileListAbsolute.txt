@@ -13,3 +13,7 @@ C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\bin\Deb
 C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.exe
 C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.xml
 C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
+C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\bin\Debug\School Mangement.exe.config
+C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.exe
+C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.xml
+C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.pdb

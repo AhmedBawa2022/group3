@@ -36,7 +36,7 @@ Partial Class frm_login
         Me.lbl_username.Font = New System.Drawing.Font("Simplified Arabic", 12.0!)
         Me.lbl_username.Location = New System.Drawing.Point(267, 66)
         Me.lbl_username.Name = "lbl_username"
-        Me.lbl_username.Size = New System.Drawing.Size(77, 28)
+        Me.lbl_username.Size = New System.Drawing.Size(100, 34)
         Me.lbl_username.TabIndex = 0
         Me.lbl_username.Text = "اسم المستخدم"
         '
@@ -46,7 +46,7 @@ Partial Class frm_login
         Me.lbl_password.Font = New System.Drawing.Font("Simplified Arabic", 12.0!)
         Me.lbl_password.Location = New System.Drawing.Point(273, 168)
         Me.lbl_password.Name = "lbl_password"
-        Me.lbl_password.Size = New System.Drawing.Size(71, 28)
+        Me.lbl_password.Size = New System.Drawing.Size(90, 34)
         Me.lbl_password.TabIndex = 1
         Me.lbl_password.Text = "كلمة المرور"
         '
@@ -56,7 +56,7 @@ Partial Class frm_login
         Me.txt_password.Location = New System.Drawing.Point(32, 158)
         Me.txt_password.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txt_password.Name = "txt_password"
-        Me.txt_password.Size = New System.Drawing.Size(202, 34)
+        Me.txt_password.Size = New System.Drawing.Size(202, 41)
         Me.txt_password.TabIndex = 2
         Me.txt_password.UseSystemPasswordChar = True
         '
@@ -66,7 +66,7 @@ Partial Class frm_login
         Me.txt_username.Location = New System.Drawing.Point(32, 55)
         Me.txt_username.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.txt_username.Name = "txt_username"
-        Me.txt_username.Size = New System.Drawing.Size(202, 34)
+        Me.txt_username.Size = New System.Drawing.Size(202, 41)
         Me.txt_username.TabIndex = 3
         '
         'btn_login
@@ -93,9 +93,9 @@ Partial Class frm_login
         '
         'frm_login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 23.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(359, 308)
+        Me.ClientSize = New System.Drawing.Size(385, 317)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.btn_login)
         Me.Controls.Add(Me.txt_username)
