@@ -83,12 +83,19 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frm_branch.Designer.vb">
+      <DependentUpon>frm_branch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_branch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_monitoring.Designer.vb">
       <DependentUpon>frm_monitoring.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_monitoring.vb">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Forms\ggggg.Designer.vb">
       <DependentUpon>ggggg.vb</DependentUpon>
     </Compile>
@@ -101,6 +108,8 @@
     <Compile Include="Forms\Management of the people%27s classroom.vb">
       <SubType>Form</SubType>
     </Compile>
+=======
+>>>>>>> d31e7203c3344e79edaf402daca6ea58d40edf68
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,15 +133,21 @@
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_branch.resx">
+      <DependentUpon>frm_branch.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_monitoring.resx">
       <DependentUpon>frm_monitoring.vb</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Forms\ggggg.resx">
       <DependentUpon>ggggg.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Management of the people%27s classroom.resx">
       <DependentUpon>Management of the people%27s classroom.vb</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> d31e7203c3344e79edaf402daca6ea58d40edf68
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
