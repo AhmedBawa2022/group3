@@ -1,0 +1,11 @@
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\bin\Debug\School Mangement.exe.config
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\bin\Debug\School Mangement.exe
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\bin\Debug\School Mangement.pdb
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\bin\Debug\School Mangement.xml
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_login.resources
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School_Mangement.Resources.resources
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.vbproj.GenerateResource.Cache
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.exe
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.xml
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
+C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_monitoring.resources
