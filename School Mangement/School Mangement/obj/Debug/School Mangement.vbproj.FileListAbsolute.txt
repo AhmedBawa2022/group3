@@ -9,3 +9,7 @@ C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Ma
 C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.xml
 C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
 C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_monitoring.resources
+C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\bin\Debug\School Mangement.exe.config
+C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.exe
+C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.xml
+C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
