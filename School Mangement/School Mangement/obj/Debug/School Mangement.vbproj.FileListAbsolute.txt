@@ -9,18 +9,11 @@ C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Ma
 C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.xml
 C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
 C:\Users\Almethalee\Documents\Visual Studio 2012\Projects\VB.NET.ACECC\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_monitoring.resources
-<<<<<<< HEAD
-C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\bin\Debug\School Mangement.exe.config
-C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.exe
-C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.xml
-C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
-C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\bin\Debug\School Mangement.exe.config
-C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.exe
-C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.xml
-C:\Users\aliga\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
-=======
 C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\bin\Debug\School Mangement.exe.config
 C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School Mangement.exe
 C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School Mangement.xml
 C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
->>>>>>> d31e7203c3344e79edaf402daca6ea58d40edf68
+C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\School Mangement\School Mangement\bin\Debug\School Mangement.exe.config
+C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\School Mangement\School Mangement\obj\Debug\School Mangement.exe
+C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\School Mangement\School Mangement\obj\Debug\School Mangement.xml
+C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
