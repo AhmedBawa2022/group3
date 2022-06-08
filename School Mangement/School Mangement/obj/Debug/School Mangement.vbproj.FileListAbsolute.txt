@@ -17,3 +17,11 @@ C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\Sc
 C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\School Mangement\School Mangement\obj\Debug\School Mangement.exe
 C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\School Mangement\School Mangement\obj\Debug\School Mangement.xml
 C:\Users\Almethalee\Downloads\group3-d31e7203c3344e79edaf402daca6ea58d40edf68\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\bin\Debug\School Mangement.exe
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\bin\Debug\School Mangement.pdb
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\bin\Debug\School Mangement.xml
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_login.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_branch.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_monitoring.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Resources.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School Mangement.vbproj.GenerateResource.Cache
