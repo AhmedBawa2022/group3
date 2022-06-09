@@ -83,6 +83,42 @@
     <Compile Include="Forms\Assigning_teachers_to_classes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form6.Designer.vb">
+      <DependentUpon>Form6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form7.Designer.vb">
+      <DependentUpon>Form7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form8.Designer.vb">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form8.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Management_of_the_people_s_classroom.Designer.vb">
       <DependentUpon>Management_of_the_people_s_classroom.vb</DependentUpon>
     </Compile>
@@ -124,6 +160,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form8.resx">
+      <DependentUpon>Form8.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_branch.resx">
       <DependentUpon>frm_branch.vb</DependentUpon>
