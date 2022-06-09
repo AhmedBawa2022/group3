@@ -1,0 +1,3 @@
+﻿Public Class Management_of_the_people_s_classroom
+
+End Class
