@@ -77,6 +77,18 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Assigning_teachers_to_classes.Designer.vb">
+      <DependentUpon>Assigning_teachers_to_classes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Assigning_teachers_to_classes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Management_of_the_people_s_classroom.Designer.vb">
+      <DependentUpon>Management_of_the_people_s_classroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Management_of_the_people_s_classroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_branch.Designer.vb">
       <DependentUpon>frm_branch.vb</DependentUpon>
     </Compile>
@@ -104,8 +116,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NewFolder1\Module1.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\Assigning_teachers_to_classes.resx">
+      <DependentUpon>Assigning_teachers_to_classes.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -114,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_monitoring.resx">
       <DependentUpon>frm_monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Management_of_the_people_s_classroom.resx">
+      <DependentUpon>Management_of_the_people_s_classroom.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

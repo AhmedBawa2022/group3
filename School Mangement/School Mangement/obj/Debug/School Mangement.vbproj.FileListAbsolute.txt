@@ -25,3 +25,5 @@ C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\ob
 C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_monitoring.resources
 C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Resources.resources
 C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School Mangement.vbproj.GenerateResource.Cache
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Form2.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Management_of_the_people_s_classroom.resources

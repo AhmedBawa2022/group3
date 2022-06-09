@@ -341,6 +341,7 @@ Partial Class Management_of_the_people_s_classroom
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Management_of_the_people_s_classroom"
         Me.Text = "شاشة الشعب"

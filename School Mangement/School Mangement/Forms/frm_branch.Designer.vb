@@ -40,10 +40,10 @@ Partial Class frm_branch
         Me.الطلابToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -104,13 +104,13 @@ Partial Class frm_branch
         'مدراءالمدارسToolStripMenuItem
         '
         Me.مدراءالمدارسToolStripMenuItem.Name = "مدراءالمدارسToolStripMenuItem"
-        Me.مدراءالمدارسToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.مدراءالمدارسToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.مدراءالمدارسToolStripMenuItem.Text = "مدراء المدارس "
         '
         'موظفيالفرعToolStripMenuItem
         '
         Me.موظفيالفرعToolStripMenuItem.Name = "موظفيالفرعToolStripMenuItem"
-        Me.موظفيالفرعToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.موظفيالفرعToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
         Me.موظفيالفرعToolStripMenuItem.Text = "موظفي الفرع"
         '
         'إعداداتToolStripMenuItem
@@ -123,13 +123,13 @@ Partial Class frm_branch
         'كلماتالمرورToolStripMenuItem
         '
         Me.كلماتالمرورToolStripMenuItem.Name = "كلماتالمرورToolStripMenuItem"
-        Me.كلماتالمرورToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.كلماتالمرورToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.كلماتالمرورToolStripMenuItem.Text = "كلمات المرور"
         '
         'الصلاحياتToolStripMenuItem
         '
         Me.الصلاحياتToolStripMenuItem.Name = "الصلاحياتToolStripMenuItem"
-        Me.الصلاحياتToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.الصلاحياتToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
         Me.الصلاحياتToolStripMenuItem.Text = "الصلاحيات"
         '
         'إحصائياتToolStripMenuItem
@@ -153,7 +153,7 @@ Partial Class frm_branch
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(3, 13)
+        Me.Button1.Location = New System.Drawing.Point(3, 6)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(130, 44)
         Me.Button1.TabIndex = 1
@@ -172,23 +172,14 @@ Partial Class frm_branch
         Me.Panel1.Size = New System.Drawing.Size(136, 318)
         Me.Panel1.TabIndex = 2
         '
-        'Button2
+        'Button5
         '
-        Me.Button2.Location = New System.Drawing.Point(3, 74)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(130, 44)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "التعليم الثانوي"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(3, 139)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 44)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "الشؤون الإدارية"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.Button5.Location = New System.Drawing.Point(3, 263)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(130, 44)
+        Me.Button5.TabIndex = 5
+        Me.Button5.Text = "النشاط"
+        Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
         '
@@ -199,14 +190,23 @@ Partial Class frm_branch
         Me.Button4.Text = "الإمتحانات"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button5
+        'Button3
         '
-        Me.Button5.Location = New System.Drawing.Point(3, 263)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(130, 44)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "النشاط"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Button3.Location = New System.Drawing.Point(3, 139)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(130, 44)
+        Me.Button3.TabIndex = 3
+        Me.Button3.Text = "الشؤون الإدارية"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(3, 74)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(130, 44)
+        Me.Button2.TabIndex = 2
+        Me.Button2.Text = "التعليم الثانوي"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'frm_branch
         '
