@@ -3,7 +3,7 @@ Partial Class Form7
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    ' <System.Diagnostics.DebuggerStepThrough()> _
 
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -29,12 +29,14 @@ Partial Class Form7
         Me.نقلمعلمToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إجازاتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.بحثToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الطلابToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إضافةطالبToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.وليالأمرToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.توزيعالطلابعلىالشعبToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.الموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ترحيلطالبToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.بحثToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.الشعبToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إضافةشعبةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.حذفشعبةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -45,23 +47,21 @@ Partial Class Form7
         Me.الطلابToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.منحيثالجنسToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.منحيثالمراحلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.منحيثالصفوفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.حسبالجنسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.منحيثالصفوفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الناجحينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الناجحينToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الراسبينToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.النتائجToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الناجحينToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.الراسبينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.الناجحينToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.الراسبينToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.اعداداتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.تغييركلمةالسرToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.بحثToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
@@ -71,7 +71,7 @@ Partial Class Form7
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.المعلمينToolStripMenuItem, Me.الطلابToolStripMenuItem, Me.الموظفينToolStripMenuItem, Me.الشعبToolStripMenuItem, Me.احصائياتToolStripMenuItem, Me.اعداداتToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.المعلمينToolStripMenuItem, Me.الموظفينToolStripMenuItem, Me.الطلابToolStripMenuItem, Me.الشعبToolStripMenuItem, Me.احصائياتToolStripMenuItem, Me.اعداداتToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
@@ -89,26 +89,38 @@ Partial Class Form7
         'إضافةمعلمToolStripMenuItem
         '
         Me.إضافةمعلمToolStripMenuItem.Name = "إضافةمعلمToolStripMenuItem"
-        Me.إضافةمعلمToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.إضافةمعلمToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.إضافةمعلمToolStripMenuItem.Text = "إضافة معلم"
         '
         'نقلمعلمToolStripMenuItem
         '
         Me.نقلمعلمToolStripMenuItem.Name = "نقلمعلمToolStripMenuItem"
-        Me.نقلمعلمToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.نقلمعلمToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.نقلمعلمToolStripMenuItem.Text = "نقل معلم"
         '
         'إجازاتToolStripMenuItem
         '
         Me.إجازاتToolStripMenuItem.Name = "إجازاتToolStripMenuItem"
-        Me.إجازاتToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.إجازاتToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.إجازاتToolStripMenuItem.Text = "إجازات"
         '
         'بحثToolStripMenuItem
         '
         Me.بحثToolStripMenuItem.Name = "بحثToolStripMenuItem"
-        Me.بحثToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.بحثToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
         Me.بحثToolStripMenuItem.Text = "بحث"
+        '
+        'توزيعالمعلمينعلىالصفوفToolStripMenuItem
+        '
+        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem.Name = "توزيعالمعلمينعلىالصفوفToolStripMenuItem"
+        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
+        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem.Text = "توزيع المعلمين على الصفوف"
+        '
+        'الموظفينToolStripMenuItem
+        '
+        Me.الموظفينToolStripMenuItem.Name = "الموظفينToolStripMenuItem"
+        Me.الموظفينToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
+        Me.الموظفينToolStripMenuItem.Text = "الموظفين"
         '
         'الطلابToolStripMenuItem
         '
@@ -135,17 +147,17 @@ Partial Class Form7
         Me.توزيعالطلابعلىالشعبToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
         Me.توزيعالطلابعلىالشعبToolStripMenuItem.Text = "توزيع الطلاب على الشعب"
         '
-        'الموظفينToolStripMenuItem
-        '
-        Me.الموظفينToolStripMenuItem.Name = "الموظفينToolStripMenuItem"
-        Me.الموظفينToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
-        Me.الموظفينToolStripMenuItem.Text = "الموظفين"
-        '
         'ترحيلطالبToolStripMenuItem
         '
         Me.ترحيلطالبToolStripMenuItem.Name = "ترحيلطالبToolStripMenuItem"
         Me.ترحيلطالبToolStripMenuItem.Size = New System.Drawing.Size(201, 22)
         Me.ترحيلطالبToolStripMenuItem.Text = "ترحيل طالب"
+        '
+        'بحثToolStripMenuItem1
+        '
+        Me.بحثToolStripMenuItem1.Name = "بحثToolStripMenuItem1"
+        Me.بحثToolStripMenuItem1.Size = New System.Drawing.Size(201, 22)
+        Me.بحثToolStripMenuItem1.Text = "بحث"
         '
         'الشعبToolStripMenuItem
         '
@@ -177,26 +189,26 @@ Partial Class Form7
         '
         Me.المعلمينToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.منحيثالجنسToolStripMenuItem, Me.منحيثالموادToolStripMenuItem})
         Me.المعلمينToolStripMenuItem1.Name = "المعلمينToolStripMenuItem1"
-        Me.المعلمينToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.المعلمينToolStripMenuItem1.Size = New System.Drawing.Size(118, 22)
         Me.المعلمينToolStripMenuItem1.Text = "المعلمين"
         '
         'منحيثالجنسToolStripMenuItem
         '
         Me.منحيثالجنسToolStripMenuItem.Name = "منحيثالجنسToolStripMenuItem"
-        Me.منحيثالجنسToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.منحيثالجنسToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.منحيثالجنسToolStripMenuItem.Text = "من حيث الجنس"
         '
         'منحيثالموادToolStripMenuItem
         '
         Me.منحيثالموادToolStripMenuItem.Name = "منحيثالموادToolStripMenuItem"
-        Me.منحيثالموادToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.منحيثالموادToolStripMenuItem.Size = New System.Drawing.Size(149, 22)
         Me.منحيثالموادToolStripMenuItem.Text = "من حيث المواد"
         '
         'الطلابToolStripMenuItem1
         '
         Me.الطلابToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.منحيثالجنسToolStripMenuItem1, Me.منحيثالمراحلToolStripMenuItem, Me.منحيثالصفوفToolStripMenuItem, Me.النتائجToolStripMenuItem})
         Me.الطلابToolStripMenuItem1.Name = "الطلابToolStripMenuItem1"
-        Me.الطلابToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.الطلابToolStripMenuItem1.Size = New System.Drawing.Size(118, 22)
         Me.الطلابToolStripMenuItem1.Text = "الطلاب"
         '
         'منحيثالجنسToolStripMenuItem1
@@ -212,6 +224,12 @@ Partial Class Form7
         Me.منحيثالمراحلToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.منحيثالمراحلToolStripMenuItem.Text = "من حيث المراحل"
         '
+        'حسبالجنسToolStripMenuItem
+        '
+        Me.حسبالجنسToolStripMenuItem.Name = "حسبالجنسToolStripMenuItem"
+        Me.حسبالجنسToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.حسبالجنسToolStripMenuItem.Text = "حسب الجنس"
+        '
         'منحيثالصفوفToolStripMenuItem
         '
         Me.منحيثالصفوفToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الناجحينToolStripMenuItem, Me.الناجحينToolStripMenuItem2, Me.الراسبينToolStripMenuItem1})
@@ -219,36 +237,11 @@ Partial Class Form7
         Me.منحيثالصفوفToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
         Me.منحيثالصفوفToolStripMenuItem.Text = "من حيث الصفوف"
         '
-        'حسبالجنسToolStripMenuItem
-        '
-        Me.حسبالجنسToolStripMenuItem.Name = "حسبالجنسToolStripMenuItem"
-        Me.حسبالجنسToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.حسبالجنسToolStripMenuItem.Text = "حسب الجنس"
-        '
         'الناجحينToolStripMenuItem
         '
         Me.الناجحينToolStripMenuItem.Name = "الناجحينToolStripMenuItem"
         Me.الناجحينToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.الناجحينToolStripMenuItem.Text = "من حيث الشعب"
-        '
-        'النتائجToolStripMenuItem
-        '
-        Me.النتائجToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الناجحينToolStripMenuItem1, Me.الراسبينToolStripMenuItem})
-        Me.النتائجToolStripMenuItem.Name = "النتائجToolStripMenuItem"
-        Me.النتائجToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
-        Me.النتائجToolStripMenuItem.Text = "النتائج"
-        '
-        'الناجحينToolStripMenuItem1
-        '
-        Me.الناجحينToolStripMenuItem1.Name = "الناجحينToolStripMenuItem1"
-        Me.الناجحينToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.الناجحينToolStripMenuItem1.Text = "الناجحين"
-        '
-        'الراسبينToolStripMenuItem
-        '
-        Me.الراسبينToolStripMenuItem.Name = "الراسبينToolStripMenuItem"
-        Me.الراسبينToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.الراسبينToolStripMenuItem.Text = "الراسبين"
         '
         'الناجحينToolStripMenuItem2
         '
@@ -262,6 +255,25 @@ Partial Class Form7
         Me.الراسبينToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.الراسبينToolStripMenuItem1.Text = "الراسبين"
         '
+        'النتائجToolStripMenuItem
+        '
+        Me.النتائجToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الناجحينToolStripMenuItem1, Me.الراسبينToolStripMenuItem})
+        Me.النتائجToolStripMenuItem.Name = "النتائجToolStripMenuItem"
+        Me.النتائجToolStripMenuItem.Size = New System.Drawing.Size(160, 22)
+        Me.النتائجToolStripMenuItem.Text = "النتائج"
+        '
+        'الناجحينToolStripMenuItem1
+        '
+        Me.الناجحينToolStripMenuItem1.Name = "الناجحينToolStripMenuItem1"
+        Me.الناجحينToolStripMenuItem1.Size = New System.Drawing.Size(114, 22)
+        Me.الناجحينToolStripMenuItem1.Text = "الناجحين"
+        '
+        'الراسبينToolStripMenuItem
+        '
+        Me.الراسبينToolStripMenuItem.Name = "الراسبينToolStripMenuItem"
+        Me.الراسبينToolStripMenuItem.Size = New System.Drawing.Size(114, 22)
+        Me.الراسبينToolStripMenuItem.Text = "الراسبين"
+        '
         'اعداداتToolStripMenuItem
         '
         Me.اعداداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.تغييركلمةالسرToolStripMenuItem})
@@ -272,14 +284,8 @@ Partial Class Form7
         'تغييركلمةالسرToolStripMenuItem
         '
         Me.تغييركلمةالسرToolStripMenuItem.Name = "تغييركلمةالسرToolStripMenuItem"
-        Me.تغييركلمةالسرToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.تغييركلمةالسرToolStripMenuItem.Size = New System.Drawing.Size(148, 22)
         Me.تغييركلمةالسرToolStripMenuItem.Text = "تغيير كلمة السر"
-        '
-        'بحثToolStripMenuItem1
-        '
-        Me.بحثToolStripMenuItem1.Name = "بحثToolStripMenuItem1"
-        Me.بحثToolStripMenuItem1.Size = New System.Drawing.Size(201, 22)
-        Me.بحثToolStripMenuItem1.Text = "بحث"
         '
         'Button1
         '
@@ -323,12 +329,6 @@ Partial Class Form7
         Me.Button4.Text = "الطلاب الأوائل"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'توزيعالمعلمينعلىالصفوفToolStripMenuItem
-        '
-        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem.Name = "توزيعالمعلمينعلىالصفوفToolStripMenuItem"
-        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem.Size = New System.Drawing.Size(218, 22)
-        Me.توزيعالمعلمينعلىالصفوفToolStripMenuItem.Text = "توزيع المعلمين على الصفوف"
-        '
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(346, 293)
@@ -365,7 +365,7 @@ Partial Class Form7
         Me.Button8.Text = "الأعوام الدراسية"
         Me.Button8.UseVisualStyleBackColor = True
         '
-        'school
+        'Form7
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -381,7 +381,7 @@ Partial Class Form7
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "school"
+        Me.Name = "Form7"
         Me.Text = "شاشة المدرسة"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

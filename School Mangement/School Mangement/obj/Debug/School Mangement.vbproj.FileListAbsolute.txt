@@ -31,3 +31,7 @@ C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\bin\Deb
 C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.exe
 C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.xml
 C:\Users\awsat\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.pdb
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Form3.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Form4.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Form8.resources
+C:\Users\Almethalee\Documents\github\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Form7.resources

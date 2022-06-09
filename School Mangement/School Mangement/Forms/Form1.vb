@@ -13,12 +13,13 @@ Public Class frm_login
 
 
             vald = dr(6)
-            If vald = "m" Then
-                frm_monitoring.Show()
+            If vald = "s" Then
+                Form7.Show()
             ElseIf vald = "b" Then
 
                 frm_branch.Show()
-            ElseIf vald = "s" Then
+            ElseIf vald = "m" Then
+                frm_monitoring.Show()
             Else
                 MsgBox("الدخول خاطئ")
             End If

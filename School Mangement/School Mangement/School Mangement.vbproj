@@ -119,6 +119,12 @@
     <Compile Include="Forms\Form8.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Form9.Designer.vb">
+      <DependentUpon>Form9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form9.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Management_of_the_people_s_classroom.Designer.vb">
       <DependentUpon>Management_of_the_people_s_classroom.vb</DependentUpon>
     </Compile>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form4.resx">
       <DependentUpon>Form4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form7.resx">
+      <DependentUpon>Form7.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form8.resx">
       <DependentUpon>Form8.vb</DependentUpon>

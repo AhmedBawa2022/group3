@@ -44,13 +44,14 @@ Partial Class frm_branch
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.إدارةالمدارسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الوحداتToolStripMenuItem, Me.شؤونالموظفينToolStripMenuItem, Me.إعداداتToolStripMenuItem, Me.إحصائياتToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الوحداتToolStripMenuItem, Me.شؤونالموظفينToolStripMenuItem, Me.إعداداتToolStripMenuItem, Me.إحصائياتToolStripMenuItem, Me.إدارةالمدارسToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(447, 24)
@@ -104,13 +105,13 @@ Partial Class frm_branch
         'مدراءالمدارسToolStripMenuItem
         '
         Me.مدراءالمدارسToolStripMenuItem.Name = "مدراءالمدارسToolStripMenuItem"
-        Me.مدراءالمدارسToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.مدراءالمدارسToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.مدراءالمدارسToolStripMenuItem.Text = "مدراء المدارس "
         '
         'موظفيالفرعToolStripMenuItem
         '
         Me.موظفيالفرعToolStripMenuItem.Name = "موظفيالفرعToolStripMenuItem"
-        Me.موظفيالفرعToolStripMenuItem.Size = New System.Drawing.Size(146, 22)
+        Me.موظفيالفرعToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.موظفيالفرعToolStripMenuItem.Text = "موظفي الفرع"
         '
         'إعداداتToolStripMenuItem
@@ -208,6 +209,12 @@ Partial Class frm_branch
         Me.Button2.Text = "التعليم الثانوي"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'إدارةالمدارسToolStripMenuItem
+        '
+        Me.إدارةالمدارسToolStripMenuItem.Name = "إدارةالمدارسToolStripMenuItem"
+        Me.إدارةالمدارسToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
+        Me.إدارةالمدارسToolStripMenuItem.Text = "إدارة المدارس"
+        '
         'frm_branch
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -252,4 +259,5 @@ Partial Class frm_branch
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents إدارةالمدارسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
