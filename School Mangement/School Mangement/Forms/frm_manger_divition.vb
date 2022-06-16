@@ -1,4 +1,4 @@
-﻿Public Class Management_of_the_people_s_classroom
+﻿Public Class frm_manger_divition
 
     Private Sub Management_of_the_people_s_classroom_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 

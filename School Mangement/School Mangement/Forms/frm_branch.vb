@@ -6,6 +6,6 @@
     End Sub
 
     Private Sub إدارةالمدارسToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إدارةالمدارسToolStripMenuItem.Click
-        Form8.Show()
+        frm_manager_schools.Show()
     End Sub
 End Class

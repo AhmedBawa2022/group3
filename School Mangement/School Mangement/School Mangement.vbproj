@@ -70,65 +70,65 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Form1.vb">
+    <Compile Include="Forms\frm_login.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Forms\frm_login.Designer.vb">
+      <DependentUpon>frm_login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Assigning_teachers_to_classes.Designer.vb">
-      <DependentUpon>Assigning_teachers_to_classes.vb</DependentUpon>
+    <Compile Include="Forms\frm_teacher_to_divition.Designer.vb">
+      <DependentUpon>frm_teacher_to_divition.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Assigning_teachers_to_classes.vb">
+    <Compile Include="Forms\frm_teacher_to_divition.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form3.Designer.vb">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <Compile Include="Forms\frm_manager_branchs.Designer.vb">
+      <DependentUpon>frm_manager_branchs.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form3.vb">
+    <Compile Include="Forms\frm_manager_branchs.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form4.Designer.vb">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <Compile Include="Forms\frm_parents.Designer.vb">
+      <DependentUpon>frm_parents.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form4.vb">
+    <Compile Include="Forms\frm_parents.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form5.Designer.vb">
-      <DependentUpon>Form5.vb</DependentUpon>
+    <Compile Include="Forms\frm_std_to_divition.Designer.vb">
+      <DependentUpon>frm_std_to_divition.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form5.vb">
+    <Compile Include="Forms\frm_std_to_divition.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form6.Designer.vb">
-      <DependentUpon>Form6.vb</DependentUpon>
+    <Compile Include="Forms\frm_teacher.Designer.vb">
+      <DependentUpon>frm_teacher.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form6.vb">
+    <Compile Include="Forms\frm_teacher.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form7.Designer.vb">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <Compile Include="Forms\frm_school.Designer.vb">
+      <DependentUpon>frm_school.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form7.vb">
+    <Compile Include="Forms\frm_school.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form8.Designer.vb">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <Compile Include="Forms\frm_manager_schools.Designer.vb">
+      <DependentUpon>frm_manager_schools.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form8.vb">
+    <Compile Include="Forms\frm_manager_schools.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Form9.Designer.vb">
-      <DependentUpon>Form9.vb</DependentUpon>
+    <Compile Include="Forms\frm_manager_classes.Designer.vb">
+      <DependentUpon>frm_manager_classes.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Form9.vb">
+    <Compile Include="Forms\frm_manager_classes.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Management_of_the_people_s_classroom.Designer.vb">
-      <DependentUpon>Management_of_the_people_s_classroom.vb</DependentUpon>
+    <Compile Include="Forms\frm_manger_divition.Designer.vb">
+      <DependentUpon>frm_manger_divition.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Management_of_the_people_s_classroom.vb">
+    <Compile Include="Forms\frm_manger_divition.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_branch.Designer.vb">
@@ -159,25 +159,35 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NewFolder1\Module1.vb" />
+    <Compile Include="NewFolder1\Module2.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\Assigning_teachers_to_classes.resx">
-      <DependentUpon>Assigning_teachers_to_classes.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_teacher_to_divition.resx">
+      <DependentUpon>frm_teacher_to_divition.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_manager_branchs.resx">
+      <DependentUpon>frm_manager_branchs.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form3.resx">
-      <DependentUpon>Form3.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_manager_classes.resx">
+      <DependentUpon>frm_manager_classes.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form4.resx">
-      <DependentUpon>Form4.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_teacher.resx">
+      <DependentUpon>frm_teacher.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form7.resx">
-      <DependentUpon>Form7.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_login.resx">
+      <DependentUpon>frm_login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Form8.resx">
-      <DependentUpon>Form8.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_parents.resx">
+      <DependentUpon>frm_parents.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_std_to_divition.resx">
+      <DependentUpon>frm_std_to_divition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_school.resx">
+      <DependentUpon>frm_school.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_manager_schools.resx">
+      <DependentUpon>frm_manager_schools.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_branch.resx">
       <DependentUpon>frm_branch.vb</DependentUpon>
@@ -185,8 +195,8 @@
     <EmbeddedResource Include="Forms\frm_monitoring.resx">
       <DependentUpon>frm_monitoring.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Management_of_the_people_s_classroom.resx">
-      <DependentUpon>Management_of_the_people_s_classroom.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frm_manger_divition.resx">
+      <DependentUpon>frm_manger_divition.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
