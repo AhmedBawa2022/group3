@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub توزيعالمعلمينعلىالصفوفToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles توزيعالمعلمينعلىالصفوفToolStripMenuItem.Click
-        Form2.Show()
+        frm_teacher_to_divition.show()
 
     End Sub
 
@@ -19,7 +19,7 @@
     End Sub
 
     Private Sub إضافةطالبToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إضافةطالبToolStripMenuItem.Click
-
+        frm_student.Show()
     End Sub
 
     Private Sub توزيعالطلابعلىالشعبToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles توزيعالطلابعلىالشعبToolStripMenuItem.Click
@@ -28,5 +28,19 @@
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         frm_manager_classes.Show()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        frm_level.Show()
+
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        frm_manger_divition.Show()
+
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+
     End Sub
 End Class

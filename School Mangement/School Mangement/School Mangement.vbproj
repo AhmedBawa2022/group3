@@ -76,6 +76,12 @@
     <Compile Include="Forms\frm_bank.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frm_branch.Designer.vb">
+      <DependentUpon>frm_branch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_branch.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_class.Designer.vb">
       <DependentUpon>frm_class.vb</DependentUpon>
     </Compile>
@@ -179,12 +185,6 @@
     <Compile Include="Forms\frm_manger_divition.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frm_branch.Designer.vb">
-      <DependentUpon>frm_branch.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frm_branch.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Forms\frm_monitoring.Designer.vb">
       <DependentUpon>frm_monitoring.vb</DependentUpon>
     </Compile>
@@ -218,6 +218,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\frm_bank.resx">
       <DependentUpon>frm_bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_branch.resx">
+      <DependentUpon>frm_branch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_class.resx">
       <DependentUpon>frm_class.vb</DependentUpon>
@@ -257,9 +260,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_manager_schools.resx">
       <DependentUpon>frm_manager_schools.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frm_branch.resx">
-      <DependentUpon>frm_branch.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_monitoring.resx">
       <DependentUpon>frm_monitoring.vb</DependentUpon>

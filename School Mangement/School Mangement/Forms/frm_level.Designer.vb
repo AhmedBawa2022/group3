@@ -105,6 +105,7 @@ Partial Class frm_level
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"عام ", "علمي", "أدبي"})
         Me.ComboBox2.Location = New System.Drawing.Point(12, 149)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(249, 24)

@@ -23,6 +23,8 @@ Partial Class frm_manager_branchs
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cmb_manager = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.cmb_monitoring = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_id = New System.Windows.Forms.TextBox()
@@ -31,16 +33,14 @@ Partial Class frm_manager_branchs
         Me.Label2 = New System.Windows.Forms.Label()
         Me.الفروع = New System.Windows.Forms.GroupBox()
         Me.dgv_Branch = New System.Windows.Forms.DataGridView()
-        Me.btn_new = New System.Windows.Forms.Button()
-        Me.btn_save = New System.Windows.Forms.Button()
-        Me.btn_edit = New System.Windows.Forms.Button()
-        Me.btn_delete = New System.Windows.Forms.Button()
-        Me.cmb_manager = New System.Windows.Forms.ComboBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.btn_new = New System.Windows.Forms.Button()
+        Me.btn_save = New System.Windows.Forms.Button()
+        Me.btn_edit = New System.Windows.Forms.Button()
+        Me.btn_delete = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.الفروع.SuspendLayout()
         CType(Me.dgv_Branch, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,6 +63,23 @@ Partial Class frm_manager_branchs
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "البيانات"
+        '
+        'cmb_manager
+        '
+        Me.cmb_manager.FormattingEnabled = True
+        Me.cmb_manager.Location = New System.Drawing.Point(136, 169)
+        Me.cmb_manager.Name = "cmb_manager"
+        Me.cmb_manager.Size = New System.Drawing.Size(323, 24)
+        Me.cmb_manager.TabIndex = 7
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(520, 176)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(54, 17)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "اسم المدير"
         '
         'cmb_monitoring
         '
@@ -138,6 +155,30 @@ Partial Class frm_manager_branchs
         Me.dgv_Branch.Size = New System.Drawing.Size(594, 180)
         Me.dgv_Branch.TabIndex = 0
         '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "Debartment_Id"
+        Me.Column1.HeaderText = "رقم الفرع"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "Debartment_Name"
+        Me.Column2.HeaderText = "اسم الفرع "
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "Edu_Mon_Name"
+        Me.Column3.HeaderText = "اسم المراقبة"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "Emp_Name"
+        Me.Column4.HeaderText = "اسم المدير "
+        Me.Column4.Name = "Column4"
+        '
         'btn_new
         '
         Me.btn_new.Location = New System.Drawing.Point(456, 439)
@@ -173,47 +214,6 @@ Partial Class frm_manager_branchs
         Me.btn_delete.TabIndex = 3
         Me.btn_delete.Text = "حذف"
         Me.btn_delete.UseVisualStyleBackColor = True
-        '
-        'cmb_manager
-        '
-        Me.cmb_manager.FormattingEnabled = True
-        Me.cmb_manager.Location = New System.Drawing.Point(136, 169)
-        Me.cmb_manager.Name = "cmb_manager"
-        Me.cmb_manager.Size = New System.Drawing.Size(323, 24)
-        Me.cmb_manager.TabIndex = 7
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(520, 176)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(54, 17)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "اسم المدير"
-        '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "Debartment_Id"
-        Me.Column1.HeaderText = "رقم الفرع"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.DataPropertyName = "Debartment_Name"
-        Me.Column2.HeaderText = "اسم الفرع "
-        Me.Column2.Name = "Column2"
-        '
-        'Column3
-        '
-        Me.Column3.DataPropertyName = "Edu_Mon_Name"
-        Me.Column3.HeaderText = "اسم المراقبة"
-        Me.Column3.Name = "Column3"
-        '
-        'Column4
-        '
-        Me.Column4.DataPropertyName = "Emp_Name"
-        Me.Column4.HeaderText = "اسم المدير "
-        Me.Column4.Name = "Column4"
         '
         'frm_manager_branchs
         '

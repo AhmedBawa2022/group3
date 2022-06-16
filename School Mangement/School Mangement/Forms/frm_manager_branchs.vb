@@ -19,6 +19,8 @@ Public Class frm_manager_branchs
     Public Sub ClearControls()
         Me.txt_id.Text = vbNullString
         Me.txt_name.Text = vbNullString
+        cmb_monitoring.SelectedIndex = -1
+        cmb_manager.SelectedIndex = -1
     End Sub
     Private Sub frm_manager_branchs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'txt_id.Text = Max_Record("Tbl_Debartments", "Debartment_Id") + 1
@@ -33,6 +35,7 @@ Public Class frm_manager_branchs
     End Sub
 
     Private Sub btn_save_Click(sender As Object, e As EventArgs) Handles btn_save.Click
+
         If txt_name.Text = vbNullString Or cmb_monitoring.Text = vbNullString Then
             MessageBox.Show("عفوا,قم بتعبئة جميع الحقول", "تنبيه", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1)
             If txt_name.Text = vbNullString Then txt_name.Focus()
@@ -94,5 +97,13 @@ Public Class frm_manager_branchs
             loadall("View_Debartment", dgv_Branch)
         End If
 
+    End Sub
+
+    Private Sub btn_new_Click(sender As Object, e As EventArgs) Handles btn_new.Click
+        btn_delete.Enabled = False
+        btn_edit.Enabled = False
+        btn_new.Enabled = False
+        btn_save.Enabled = True
+        ClearControls()
     End Sub
 End Class

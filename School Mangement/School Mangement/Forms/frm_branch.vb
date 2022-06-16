@@ -1,11 +1,12 @@
 ﻿Public Class frm_branch
 
-   
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub المدارسToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles المدارسToolStripMenuItem.Click
+        frm_school.Show()
 
     End Sub
 
-    Private Sub إدارةالمدارسToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إدارةالمدارسToolStripMenuItem.Click
-        frm_manager_schools.Show()
+    Private Sub المراقباتToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles المراقباتToolStripMenuItem.Click
+        frm_monitoring.Show()
+
     End Sub
 End Class

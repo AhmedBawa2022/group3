@@ -42,10 +42,8 @@ C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\ob
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\bin\Debug\School Mangement.exe
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\bin\Debug\School Mangement.pdb
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\bin\Debug\School Mangement.xml
-C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Form2.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_manager_branchs.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_manager_classes.resources
-C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_teacher_to_div.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_teacher.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_login.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_parents.resources
@@ -57,3 +55,10 @@ C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\ob
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_manger_divition.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.Resources.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School Mangement.vbproj.GenerateResource.Cache
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_bank.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_class.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_level.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_location.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_subject.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_teacher_to_divition.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_years.resources

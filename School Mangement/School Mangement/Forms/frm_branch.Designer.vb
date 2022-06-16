@@ -23,241 +23,283 @@ Partial Class frm_branch
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
-        Me.الوحداتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.وحدةالتعليمالأساسيToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.وحدةالتعليمالثانويToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.الشؤونالإداريةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.المعلمينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.احصائياتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.المعلمينToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.منحيثالجنسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.منحيثالموادToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الطلابToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.منحيثالجنسToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.منحيثالمراحلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.حسبالجنسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.منحيثالصفوفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الناجحينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الناجحينToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الراسبينToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.النتائجToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الناجحينToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الراسبينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.اعداداتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.تغييركلمةالسرToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.التنقلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.التعليمالأساسيToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.التعليمالثانويToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الشؤونالاداريةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.النشاطToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.وحدةالامتحاناتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.شؤونالموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الامتحاناتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.مدراءالمدارسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.موظفيالفرعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.إعداداتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.كلماتالمرورToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الصلاحياتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.إحصائياتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.المعلمينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.الطلابToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.إدارةالمدارسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.المدارسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.المراقباتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
-        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الوحداتToolStripMenuItem, Me.شؤونالموظفينToolStripMenuItem, Me.إعداداتToolStripMenuItem, Me.إحصائياتToolStripMenuItem, Me.إدارةالمدارسToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.المعلمينToolStripMenuItem, Me.الموظفينToolStripMenuItem, Me.احصائياتToolStripMenuItem, Me.اعداداتToolStripMenuItem, Me.التنقلToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(447, 24)
-        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(8, 2, 0, 2)
+        Me.MenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.MenuStrip1.Size = New System.Drawing.Size(564, 28)
+        Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
-        'الوحداتToolStripMenuItem
+        'المعلمينToolStripMenuItem
         '
-        Me.الوحداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.وحدةالتعليمالأساسيToolStripMenuItem, Me.وحدةالتعليمالثانويToolStripMenuItem, Me.الشؤونالإداريةToolStripMenuItem, Me.النشاطToolStripMenuItem, Me.وحدةالامتحاناتToolStripMenuItem})
-        Me.الوحداتToolStripMenuItem.Name = "الوحداتToolStripMenuItem"
-        Me.الوحداتToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
-        Me.الوحداتToolStripMenuItem.Text = " الوحدات"
+        Me.المعلمينToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.التعليمالأساسيToolStripMenuItem, Me.التعليمالثانويToolStripMenuItem, Me.الشؤونالاداريةToolStripMenuItem, Me.النشاطToolStripMenuItem, Me.الامتحاناتToolStripMenuItem})
+        Me.المعلمينToolStripMenuItem.Name = "المعلمينToolStripMenuItem"
+        Me.المعلمينToolStripMenuItem.Size = New System.Drawing.Size(73, 24)
+        Me.المعلمينToolStripMenuItem.Text = "الوحدات"
         '
-        'وحدةالتعليمالأساسيToolStripMenuItem
+        'الموظفينToolStripMenuItem
         '
-        Me.وحدةالتعليمالأساسيToolStripMenuItem.Name = "وحدةالتعليمالأساسيToolStripMenuItem"
-        Me.وحدةالتعليمالأساسيToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.وحدةالتعليمالأساسيToolStripMenuItem.Text = "وحدة التعليم الأساسي"
+        Me.الموظفينToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.مدراءالمدارسToolStripMenuItem, Me.موظفيالفرعToolStripMenuItem})
+        Me.الموظفينToolStripMenuItem.Name = "الموظفينToolStripMenuItem"
+        Me.الموظفينToolStripMenuItem.Size = New System.Drawing.Size(83, 24)
+        Me.الموظفينToolStripMenuItem.Text = "الموظفين"
         '
-        'وحدةالتعليمالثانويToolStripMenuItem
+        'احصائياتToolStripMenuItem
         '
-        Me.وحدةالتعليمالثانويToolStripMenuItem.Name = "وحدةالتعليمالثانويToolStripMenuItem"
-        Me.وحدةالتعليمالثانويToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.وحدةالتعليمالثانويToolStripMenuItem.Text = "وحدة التعليم الثانوي "
+        Me.احصائياتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.المعلمينToolStripMenuItem1, Me.الطلابToolStripMenuItem1})
+        Me.احصائياتToolStripMenuItem.Name = "احصائياتToolStripMenuItem"
+        Me.احصائياتToolStripMenuItem.Size = New System.Drawing.Size(81, 24)
+        Me.احصائياتToolStripMenuItem.Text = "احصائيات"
         '
-        'الشؤونالإداريةToolStripMenuItem
+        'المعلمينToolStripMenuItem1
         '
-        Me.الشؤونالإداريةToolStripMenuItem.Name = "الشؤونالإداريةToolStripMenuItem"
-        Me.الشؤونالإداريةToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.الشؤونالإداريةToolStripMenuItem.Text = "وحدة الشؤون الإدارية"
+        Me.المعلمينToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.منحيثالجنسToolStripMenuItem, Me.منحيثالموادToolStripMenuItem})
+        Me.المعلمينToolStripMenuItem1.Name = "المعلمينToolStripMenuItem1"
+        Me.المعلمينToolStripMenuItem1.Size = New System.Drawing.Size(134, 24)
+        Me.المعلمينToolStripMenuItem1.Text = "المعلمين"
+        '
+        'منحيثالجنسToolStripMenuItem
+        '
+        Me.منحيثالجنسToolStripMenuItem.Name = "منحيثالجنسToolStripMenuItem"
+        Me.منحيثالجنسToolStripMenuItem.Size = New System.Drawing.Size(174, 24)
+        Me.منحيثالجنسToolStripMenuItem.Text = "من حيث الجنس"
+        '
+        'منحيثالموادToolStripMenuItem
+        '
+        Me.منحيثالموادToolStripMenuItem.Name = "منحيثالموادToolStripMenuItem"
+        Me.منحيثالموادToolStripMenuItem.Size = New System.Drawing.Size(174, 24)
+        Me.منحيثالموادToolStripMenuItem.Text = "من حيث المواد"
+        '
+        'الطلابToolStripMenuItem1
+        '
+        Me.الطلابToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.منحيثالجنسToolStripMenuItem1, Me.منحيثالمراحلToolStripMenuItem, Me.منحيثالصفوفToolStripMenuItem, Me.النتائجToolStripMenuItem})
+        Me.الطلابToolStripMenuItem1.Name = "الطلابToolStripMenuItem1"
+        Me.الطلابToolStripMenuItem1.Size = New System.Drawing.Size(134, 24)
+        Me.الطلابToolStripMenuItem1.Text = "الطلاب"
+        '
+        'منحيثالجنسToolStripMenuItem1
+        '
+        Me.منحيثالجنسToolStripMenuItem1.Name = "منحيثالجنسToolStripMenuItem1"
+        Me.منحيثالجنسToolStripMenuItem1.Size = New System.Drawing.Size(188, 24)
+        Me.منحيثالجنسToolStripMenuItem1.Text = "من حيث الجنس"
+        '
+        'منحيثالمراحلToolStripMenuItem
+        '
+        Me.منحيثالمراحلToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.حسبالجنسToolStripMenuItem})
+        Me.منحيثالمراحلToolStripMenuItem.Name = "منحيثالمراحلToolStripMenuItem"
+        Me.منحيثالمراحلToolStripMenuItem.Size = New System.Drawing.Size(188, 24)
+        Me.منحيثالمراحلToolStripMenuItem.Text = "من حيث المراحل"
+        '
+        'حسبالجنسToolStripMenuItem
+        '
+        Me.حسبالجنسToolStripMenuItem.Name = "حسبالجنسToolStripMenuItem"
+        Me.حسبالجنسToolStripMenuItem.Size = New System.Drawing.Size(159, 24)
+        Me.حسبالجنسToolStripMenuItem.Text = "حسب الجنس"
+        '
+        'منحيثالصفوفToolStripMenuItem
+        '
+        Me.منحيثالصفوفToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الناجحينToolStripMenuItem, Me.الناجحينToolStripMenuItem2, Me.الراسبينToolStripMenuItem1})
+        Me.منحيثالصفوفToolStripMenuItem.Name = "منحيثالصفوفToolStripMenuItem"
+        Me.منحيثالصفوفToolStripMenuItem.Size = New System.Drawing.Size(188, 24)
+        Me.منحيثالصفوفToolStripMenuItem.Text = "من حيث الصفوف"
+        '
+        'الناجحينToolStripMenuItem
+        '
+        Me.الناجحينToolStripMenuItem.Name = "الناجحينToolStripMenuItem"
+        Me.الناجحينToolStripMenuItem.Size = New System.Drawing.Size(178, 24)
+        Me.الناجحينToolStripMenuItem.Text = "من حيث الشعب"
+        '
+        'الناجحينToolStripMenuItem2
+        '
+        Me.الناجحينToolStripMenuItem2.Name = "الناجحينToolStripMenuItem2"
+        Me.الناجحينToolStripMenuItem2.Size = New System.Drawing.Size(178, 24)
+        Me.الناجحينToolStripMenuItem2.Text = "الناجحين"
+        '
+        'الراسبينToolStripMenuItem1
+        '
+        Me.الراسبينToolStripMenuItem1.Name = "الراسبينToolStripMenuItem1"
+        Me.الراسبينToolStripMenuItem1.Size = New System.Drawing.Size(178, 24)
+        Me.الراسبينToolStripMenuItem1.Text = "الراسبين"
+        '
+        'النتائجToolStripMenuItem
+        '
+        Me.النتائجToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الناجحينToolStripMenuItem1, Me.الراسبينToolStripMenuItem})
+        Me.النتائجToolStripMenuItem.Name = "النتائجToolStripMenuItem"
+        Me.النتائجToolStripMenuItem.Size = New System.Drawing.Size(188, 24)
+        Me.النتائجToolStripMenuItem.Text = "النتائج"
+        '
+        'الناجحينToolStripMenuItem1
+        '
+        Me.الناجحينToolStripMenuItem1.Name = "الناجحينToolStripMenuItem1"
+        Me.الناجحينToolStripMenuItem1.Size = New System.Drawing.Size(129, 24)
+        Me.الناجحينToolStripMenuItem1.Text = "الناجحين"
+        '
+        'الراسبينToolStripMenuItem
+        '
+        Me.الراسبينToolStripMenuItem.Name = "الراسبينToolStripMenuItem"
+        Me.الراسبينToolStripMenuItem.Size = New System.Drawing.Size(129, 24)
+        Me.الراسبينToolStripMenuItem.Text = "الراسبين"
+        '
+        'اعداداتToolStripMenuItem
+        '
+        Me.اعداداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.تغييركلمةالسرToolStripMenuItem, Me.الصلاحياتToolStripMenuItem})
+        Me.اعداداتToolStripMenuItem.Name = "اعداداتToolStripMenuItem"
+        Me.اعداداتToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
+        Me.اعداداتToolStripMenuItem.Text = "اعدادات"
+        '
+        'تغييركلمةالسرToolStripMenuItem
+        '
+        Me.تغييركلمةالسرToolStripMenuItem.Name = "تغييركلمةالسرToolStripMenuItem"
+        Me.تغييركلمةالسرToolStripMenuItem.Size = New System.Drawing.Size(172, 24)
+        Me.تغييركلمةالسرToolStripMenuItem.Text = "تغيير كلمة السر"
+        '
+        'التنقلToolStripMenuItem
+        '
+        Me.التنقلToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.المدارسToolStripMenuItem, Me.المراقباتToolStripMenuItem})
+        Me.التنقلToolStripMenuItem.Name = "التنقلToolStripMenuItem"
+        Me.التنقلToolStripMenuItem.Size = New System.Drawing.Size(58, 24)
+        Me.التنقلToolStripMenuItem.Text = "التنقل"
+        '
+        'التعليمالأساسيToolStripMenuItem
+        '
+        Me.التعليمالأساسيToolStripMenuItem.Name = "التعليمالأساسيToolStripMenuItem"
+        Me.التعليمالأساسيToolStripMenuItem.Size = New System.Drawing.Size(175, 24)
+        Me.التعليمالأساسيToolStripMenuItem.Text = "التعليم الأساسي"
+        '
+        'التعليمالثانويToolStripMenuItem
+        '
+        Me.التعليمالثانويToolStripMenuItem.Name = "التعليمالثانويToolStripMenuItem"
+        Me.التعليمالثانويToolStripMenuItem.Size = New System.Drawing.Size(175, 24)
+        Me.التعليمالثانويToolStripMenuItem.Text = "التعليم الثانوي"
+        '
+        'الشؤونالاداريةToolStripMenuItem
+        '
+        Me.الشؤونالاداريةToolStripMenuItem.Name = "الشؤونالاداريةToolStripMenuItem"
+        Me.الشؤونالاداريةToolStripMenuItem.Size = New System.Drawing.Size(175, 24)
+        Me.الشؤونالاداريةToolStripMenuItem.Text = "الشؤون الادارية"
         '
         'النشاطToolStripMenuItem
         '
         Me.النشاطToolStripMenuItem.Name = "النشاطToolStripMenuItem"
-        Me.النشاطToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.النشاطToolStripMenuItem.Text = "وحدة النشاط"
+        Me.النشاطToolStripMenuItem.Size = New System.Drawing.Size(175, 24)
+        Me.النشاطToolStripMenuItem.Text = "النشاط"
         '
-        'وحدةالامتحاناتToolStripMenuItem
+        'الامتحاناتToolStripMenuItem
         '
-        Me.وحدةالامتحاناتToolStripMenuItem.Name = "وحدةالامتحاناتToolStripMenuItem"
-        Me.وحدةالامتحاناتToolStripMenuItem.Size = New System.Drawing.Size(178, 22)
-        Me.وحدةالامتحاناتToolStripMenuItem.Text = "وحدة الامتحانات"
-        '
-        'شؤونالموظفينToolStripMenuItem
-        '
-        Me.شؤونالموظفينToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.مدراءالمدارسToolStripMenuItem, Me.موظفيالفرعToolStripMenuItem})
-        Me.شؤونالموظفينToolStripMenuItem.Name = "شؤونالموظفينToolStripMenuItem"
-        Me.شؤونالموظفينToolStripMenuItem.Size = New System.Drawing.Size(100, 20)
-        Me.شؤونالموظفينToolStripMenuItem.Text = "شؤون الموظفين"
+        Me.الامتحاناتToolStripMenuItem.Name = "الامتحاناتToolStripMenuItem"
+        Me.الامتحاناتToolStripMenuItem.Size = New System.Drawing.Size(175, 24)
+        Me.الامتحاناتToolStripMenuItem.Text = "الامتحانات"
         '
         'مدراءالمدارسToolStripMenuItem
         '
         Me.مدراءالمدارسToolStripMenuItem.Name = "مدراءالمدارسToolStripMenuItem"
-        Me.مدراءالمدارسToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.مدراءالمدارسToolStripMenuItem.Size = New System.Drawing.Size(171, 24)
         Me.مدراءالمدارسToolStripMenuItem.Text = "مدراء المدارس "
         '
         'موظفيالفرعToolStripMenuItem
         '
         Me.موظفيالفرعToolStripMenuItem.Name = "موظفيالفرعToolStripMenuItem"
-        Me.موظفيالفرعToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.موظفيالفرعToolStripMenuItem.Size = New System.Drawing.Size(171, 24)
         Me.موظفيالفرعToolStripMenuItem.Text = "موظفي الفرع"
-        '
-        'إعداداتToolStripMenuItem
-        '
-        Me.إعداداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.كلماتالمرورToolStripMenuItem, Me.الصلاحياتToolStripMenuItem})
-        Me.إعداداتToolStripMenuItem.Name = "إعداداتToolStripMenuItem"
-        Me.إعداداتToolStripMenuItem.Size = New System.Drawing.Size(58, 20)
-        Me.إعداداتToolStripMenuItem.Text = "إعدادات"
-        '
-        'كلماتالمرورToolStripMenuItem
-        '
-        Me.كلماتالمرورToolStripMenuItem.Name = "كلماتالمرورToolStripMenuItem"
-        Me.كلماتالمرورToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
-        Me.كلماتالمرورToolStripMenuItem.Text = "كلمات المرور"
         '
         'الصلاحياتToolStripMenuItem
         '
         Me.الصلاحياتToolStripMenuItem.Name = "الصلاحياتToolStripMenuItem"
-        Me.الصلاحياتToolStripMenuItem.Size = New System.Drawing.Size(137, 22)
+        Me.الصلاحياتToolStripMenuItem.Size = New System.Drawing.Size(172, 24)
         Me.الصلاحياتToolStripMenuItem.Text = "الصلاحيات"
         '
-        'إحصائياتToolStripMenuItem
+        'المدارسToolStripMenuItem
         '
-        Me.إحصائياتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.المعلمينToolStripMenuItem, Me.الطلابToolStripMenuItem})
-        Me.إحصائياتToolStripMenuItem.Name = "إحصائياتToolStripMenuItem"
-        Me.إحصائياتToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
-        Me.إحصائياتToolStripMenuItem.Text = "إحصائيات "
+        Me.المدارسToolStripMenuItem.Name = "المدارسToolStripMenuItem"
+        Me.المدارسToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.المدارسToolStripMenuItem.Text = "المدارس "
         '
-        'المعلمينToolStripMenuItem
+        'المراقباتToolStripMenuItem
         '
-        Me.المعلمينToolStripMenuItem.Name = "المعلمينToolStripMenuItem"
-        Me.المعلمينToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
-        Me.المعلمينToolStripMenuItem.Text = "المعلمين"
-        '
-        'الطلابToolStripMenuItem
-        '
-        Me.الطلابToolStripMenuItem.Name = "الطلابToolStripMenuItem"
-        Me.الطلابToolStripMenuItem.Size = New System.Drawing.Size(118, 22)
-        Me.الطلابToolStripMenuItem.Text = "الطلاب "
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(3, 6)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(130, 44)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "التعليم الأساسي"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.Controls.Add(Me.Button5)
-        Me.Panel1.Controls.Add(Me.Button4)
-        Me.Panel1.Controls.Add(Me.Button3)
-        Me.Panel1.Controls.Add(Me.Button2)
-        Me.Panel1.Controls.Add(Me.Button1)
-        Me.Panel1.Location = New System.Drawing.Point(311, 39)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(136, 318)
-        Me.Panel1.TabIndex = 2
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(3, 263)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(130, 44)
-        Me.Button5.TabIndex = 5
-        Me.Button5.Text = "النشاط"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(3, 200)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(130, 44)
-        Me.Button4.TabIndex = 4
-        Me.Button4.Text = "الإمتحانات"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(3, 139)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(130, 44)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "الشؤون الإدارية"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(3, 74)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(130, 44)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "التعليم الثانوي"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'إدارةالمدارسToolStripMenuItem
-        '
-        Me.إدارةالمدارسToolStripMenuItem.Name = "إدارةالمدارسToolStripMenuItem"
-        Me.إدارةالمدارسToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
-        Me.إدارةالمدارسToolStripMenuItem.Text = "إدارة المدارس"
+        Me.المراقباتToolStripMenuItem.Name = "المراقباتToolStripMenuItem"
+        Me.المراقباتToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.المراقباتToolStripMenuItem.Text = "المراقبات"
         '
         'frm_branch
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(447, 361)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(564, 400)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frm_branch"
-        Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "شاشة الفرع "
+        Me.Text = "frm_branch"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
-    Friend WithEvents الوحداتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents وحدةالتعليمالأساسيToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents وحدةالتعليمالثانويToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents الشؤونالإداريةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents المعلمينToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الموظفينToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents احصائياتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents المعلمينToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents منحيثالجنسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents منحيثالموادToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الطلابToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents منحيثالجنسToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents منحيثالمراحلToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents حسبالجنسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents منحيثالصفوفToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الناجحينToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الناجحينToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الراسبينToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents النتائجToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الناجحينToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الراسبينToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents اعداداتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents تغييركلمةالسرToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents التعليمالأساسيToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents التعليمالثانويToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الشؤونالاداريةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents النشاطToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents وحدةالامتحاناتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents شؤونالموظفينToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents إعداداتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents إحصائياتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الامتحاناتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents مدراءالمدارسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents موظفيالفرعToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents كلماتالمرورToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents الصلاحياتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents المعلمينToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents الطلابToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents إدارةالمدارسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents التنقلToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents المدارسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents المراقباتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

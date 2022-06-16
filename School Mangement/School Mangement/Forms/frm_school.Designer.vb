@@ -291,7 +291,7 @@ Partial Class frm_school
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(461, 41)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(155, 57)
         Me.Button1.TabIndex = 1
@@ -301,7 +301,7 @@ Partial Class frm_school
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(461, 105)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(155, 57)
         Me.Button2.TabIndex = 2
@@ -318,7 +318,7 @@ Partial Class frm_school
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(461, 169)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(155, 57)
         Me.Button3.TabIndex = 4
@@ -328,7 +328,7 @@ Partial Class frm_school
         'Button4
         '
         Me.Button4.Location = New System.Drawing.Point(461, 233)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(155, 57)
         Me.Button4.TabIndex = 5
@@ -338,7 +338,7 @@ Partial Class frm_school
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(461, 361)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(4)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(155, 57)
         Me.Button5.TabIndex = 6
@@ -348,7 +348,7 @@ Partial Class frm_school
         'Button6
         '
         Me.Button6.Location = New System.Drawing.Point(461, 425)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(4)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(155, 57)
         Me.Button6.TabIndex = 7
@@ -358,7 +358,7 @@ Partial Class frm_school
         'Button7
         '
         Me.Button7.Location = New System.Drawing.Point(461, 297)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button7.Margin = New System.Windows.Forms.Padding(4)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(155, 57)
         Me.Button7.TabIndex = 8
@@ -368,7 +368,7 @@ Partial Class frm_school
         'Button8
         '
         Me.Button8.Location = New System.Drawing.Point(461, 489)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(4)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(155, 57)
         Me.Button8.TabIndex = 9
@@ -391,7 +391,7 @@ Partial Class frm_school
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "frm_school"
         Me.Text = "شاشة المدرسة"
         Me.MenuStrip1.ResumeLayout(False)

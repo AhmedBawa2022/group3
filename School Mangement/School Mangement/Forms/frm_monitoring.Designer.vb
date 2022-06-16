@@ -22,9 +22,6 @@ Partial Class frm_monitoring
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.btn_branch_north = New System.Windows.Forms.Button()
-        Me.btn_branch_west = New System.Windows.Forms.Button()
-        Me.btn_branch_east = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.الفروعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إضافةوتعديلبيناتفرعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,42 +39,21 @@ Partial Class frm_monitoring
         Me.إدارةالمناطقToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إدارةالمصارفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إدارةالمراقباتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.إضافةعامدراسيToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.إضافةموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.التنقلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.الفروعToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.المدارسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'btn_branch_north
-        '
-        Me.btn_branch_north.Location = New System.Drawing.Point(49, 200)
-        Me.btn_branch_north.Name = "btn_branch_north"
-        Me.btn_branch_north.Size = New System.Drawing.Size(118, 79)
-        Me.btn_branch_north.TabIndex = 0
-        Me.btn_branch_north.Text = "الفرع ..."
-        Me.btn_branch_north.UseVisualStyleBackColor = True
-        '
-        'btn_branch_west
-        '
-        Me.btn_branch_west.Location = New System.Drawing.Point(198, 200)
-        Me.btn_branch_west.Name = "btn_branch_west"
-        Me.btn_branch_west.Size = New System.Drawing.Size(118, 79)
-        Me.btn_branch_west.TabIndex = 1
-        Me.btn_branch_west.Text = "الفرع الغربي"
-        Me.btn_branch_west.UseVisualStyleBackColor = True
-        '
-        'btn_branch_east
-        '
-        Me.btn_branch_east.Location = New System.Drawing.Point(354, 200)
-        Me.btn_branch_east.Name = "btn_branch_east"
-        Me.btn_branch_east.Size = New System.Drawing.Size(118, 79)
-        Me.btn_branch_east.TabIndex = 2
-        Me.btn_branch_east.Text = "الفرع الشرقي"
-        Me.btn_branch_east.UseVisualStyleBackColor = True
-        '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الفروعToolStripMenuItem, Me.العامالدراسيToolStripMenuItem, Me.شؤونالموظفينToolStripMenuItem, Me.احصائياتToolStripMenuItem, Me.إعداداتToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الفروعToolStripMenuItem, Me.العامالدراسيToolStripMenuItem, Me.شؤونالموظفينToolStripMenuItem, Me.احصائياتToolStripMenuItem, Me.إعداداتToolStripMenuItem, Me.التنقلToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(496, 28)
+        Me.MenuStrip1.Size = New System.Drawing.Size(740, 28)
         Me.MenuStrip1.TabIndex = 3
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -102,13 +78,14 @@ Partial Class frm_monitoring
         '
         'العامالدراسيToolStripMenuItem
         '
+        Me.العامالدراسيToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.إضافةعامدراسيToolStripMenuItem, Me.بحثفيالاعوامالدراسيةToolStripMenuItem})
         Me.العامالدراسيToolStripMenuItem.Name = "العامالدراسيToolStripMenuItem"
         Me.العامالدراسيToolStripMenuItem.Size = New System.Drawing.Size(107, 24)
         Me.العامالدراسيToolStripMenuItem.Text = "العام الدراسي "
         '
         'شؤونالموظفينToolStripMenuItem
         '
-        Me.شؤونالموظفينToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.موظفيالمراقبةToolStripMenuItem, Me.مدراءالفروعToolStripMenuItem})
+        Me.شؤونالموظفينToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.موظفيالمراقبةToolStripMenuItem, Me.مدراءالفروعToolStripMenuItem, Me.إضافةموظفينToolStripMenuItem})
         Me.شؤونالموظفينToolStripMenuItem.Name = "شؤونالموظفينToolStripMenuItem"
         Me.شؤونالموظفينToolStripMenuItem.Size = New System.Drawing.Size(126, 24)
         Me.شؤونالموظفينToolStripMenuItem.Text = "شؤون الموظفين"
@@ -146,7 +123,7 @@ Partial Class frm_monitoring
         '
         'إعداداتToolStripMenuItem
         '
-        Me.إعداداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.تغييركلمةالسرToolStripMenuItem, Me.الصلاحياتToolStripMenuItem, Me.إدارةالمناطقToolStripMenuItem, Me.إدارةالمصارفToolStripMenuItem, Me.إدارةالمراقباتToolStripMenuItem})
+        Me.إعداداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.إدارةالمناطقToolStripMenuItem, Me.إدارةالمصارفToolStripMenuItem, Me.الصلاحياتToolStripMenuItem, Me.تغييركلمةالسرToolStripMenuItem, Me.إدارةالمراقباتToolStripMenuItem})
         Me.إعداداتToolStripMenuItem.Name = "إعداداتToolStripMenuItem"
         Me.إعداداتToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
         Me.إعداداتToolStripMenuItem.Text = "إعدادات"
@@ -181,14 +158,48 @@ Partial Class frm_monitoring
         Me.إدارةالمراقباتToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
         Me.إدارةالمراقباتToolStripMenuItem.Text = "إدارة المراقبات "
         '
+        'إضافةعامدراسيToolStripMenuItem
+        '
+        Me.إضافةعامدراسيToolStripMenuItem.Name = "إضافةعامدراسيToolStripMenuItem"
+        Me.إضافةعامدراسيToolStripMenuItem.Size = New System.Drawing.Size(238, 24)
+        Me.إضافةعامدراسيToolStripMenuItem.Text = "إضافة عام دراسي "
+        '
+        'بحثفيالاعوامالدراسيةToolStripMenuItem
+        '
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Name = "بحثفيالاعوامالدراسيةToolStripMenuItem"
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Size = New System.Drawing.Size(238, 24)
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Text = "بحث في الاعوام الدراسية "
+        '
+        'إضافةموظفينToolStripMenuItem
+        '
+        Me.إضافةموظفينToolStripMenuItem.Name = "إضافةموظفينToolStripMenuItem"
+        Me.إضافةموظفينToolStripMenuItem.Size = New System.Drawing.Size(181, 24)
+        Me.إضافةموظفينToolStripMenuItem.Text = "إضافة موظفين "
+        '
+        'التنقلToolStripMenuItem
+        '
+        Me.التنقلToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الفروعToolStripMenuItem1, Me.المدارسToolStripMenuItem})
+        Me.التنقلToolStripMenuItem.Name = "التنقلToolStripMenuItem"
+        Me.التنقلToolStripMenuItem.Size = New System.Drawing.Size(58, 24)
+        Me.التنقلToolStripMenuItem.Text = "التنقل"
+        '
+        'الفروعToolStripMenuItem1
+        '
+        Me.الفروعToolStripMenuItem1.Name = "الفروعToolStripMenuItem1"
+        Me.الفروعToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.الفروعToolStripMenuItem1.Text = "الفروع "
+        '
+        'المدارسToolStripMenuItem
+        '
+        Me.المدارسToolStripMenuItem.Name = "المدارسToolStripMenuItem"
+        Me.المدارسToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.المدارسToolStripMenuItem.Text = "المدارس"
+        '
         'frm_monitoring
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(496, 390)
-        Me.Controls.Add(Me.btn_branch_east)
-        Me.Controls.Add(Me.btn_branch_west)
-        Me.Controls.Add(Me.btn_branch_north)
+        Me.ClientSize = New System.Drawing.Size(740, 449)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Font = New System.Drawing.Font("Arial", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -204,9 +215,6 @@ Partial Class frm_monitoring
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents btn_branch_north As System.Windows.Forms.Button
-    Friend WithEvents btn_branch_west As System.Windows.Forms.Button
-    Friend WithEvents btn_branch_east As System.Windows.Forms.Button
     Friend WithEvents MenuStrip1 As System.Windows.Forms.MenuStrip
     Friend WithEvents الفروعToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents إضافةوتعديلبيناتفرعToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -224,4 +232,10 @@ Partial Class frm_monitoring
     Friend WithEvents إدارةالمناطقToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents إدارةالمصارفToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents إدارةالمراقباتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents إضافةعامدراسيToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents بحثفيالاعوامالدراسيةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents إضافةموظفينToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents التنقلToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents الفروعToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents المدارسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
