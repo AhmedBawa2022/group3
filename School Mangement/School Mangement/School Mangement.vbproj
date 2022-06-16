@@ -70,11 +70,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\frm_bank.Designer.vb">
+      <DependentUpon>frm_bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_bank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_location.Designer.vb">
+      <DependentUpon>frm_location.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_location.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_login.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_login.Designer.vb">
       <DependentUpon>frm_login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_subject.Designer.vb">
+      <DependentUpon>frm_subject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_subject.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_teacher_to_divition.Designer.vb">
@@ -143,6 +161,12 @@
     <Compile Include="Forms\frm_monitoring.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frm_years.Designer.vb">
+      <DependentUpon>frm_years.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_years.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -162,6 +186,15 @@
     <Compile Include="NewFolder1\Module2.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\frm_bank.resx">
+      <DependentUpon>frm_bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_location.resx">
+      <DependentUpon>frm_location.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_subject.resx">
+      <DependentUpon>frm_subject.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_teacher_to_divition.resx">
       <DependentUpon>frm_teacher_to_divition.vb</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +230,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_manger_divition.resx">
       <DependentUpon>frm_manger_divition.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_years.resx">
+      <DependentUpon>frm_years.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
