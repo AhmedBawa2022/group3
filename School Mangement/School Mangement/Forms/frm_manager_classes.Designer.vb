@@ -44,7 +44,6 @@ Partial Class frm_manager_classes
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -260,10 +259,9 @@ Partial Class frm_manager_classes
         '
         'DataGridView1
         '
-        Me.DataGridView1.AllowUserToAddRows = False
         Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column6})
         Me.DataGridView1.Location = New System.Drawing.Point(25, 321)
         Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.DataGridView1.Name = "DataGridView1"
@@ -274,12 +272,12 @@ Partial Class frm_manager_classes
         '
         'Column1
         '
-        Me.Column1.HeaderText = "رقم الشعبة"
+        Me.Column1.HeaderText = "رقم الصف"
         Me.Column1.Name = "Column1"
         '
         'Column2
         '
-        Me.Column2.HeaderText = "اسم الشعبة"
+        Me.Column2.HeaderText = "اسم الصف"
         Me.Column2.Name = "Column2"
         '
         'Column3
@@ -292,11 +290,6 @@ Partial Class frm_manager_classes
         Me.Column4.HeaderText = "المرحلة الدراسية"
         Me.Column4.MaxInputLength = 40000
         Me.Column4.Name = "Column4"
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "الصف الدراسي"
-        Me.Column5.Name = "Column5"
         '
         'Column6
         '
@@ -342,6 +335,5 @@ Partial Class frm_manager_classes
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column6 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
