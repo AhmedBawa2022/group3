@@ -76,6 +76,24 @@
     <Compile Include="Forms\frm_bank.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frm_class.Designer.vb">
+      <DependentUpon>frm_class.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_class.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_employees.Designer.vb">
+      <DependentUpon>frm_employees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_employees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_grade.Designer.vb">
+      <DependentUpon>frm_grade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_grade.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_location.Designer.vb">
       <DependentUpon>frm_location.vb</DependentUpon>
     </Compile>
@@ -188,6 +206,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Forms\frm_bank.resx">
       <DependentUpon>frm_bank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_class.resx">
+      <DependentUpon>frm_class.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_location.resx">
       <DependentUpon>frm_location.vb</DependentUpon>
