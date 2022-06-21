@@ -231,6 +231,9 @@
     <EmbeddedResource Include="Forms\frm_location.resx">
       <DependentUpon>frm_location.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_student.resx">
+      <DependentUpon>frm_student.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_subject.resx">
       <DependentUpon>frm_subject.vb</DependentUpon>
     </EmbeddedResource>

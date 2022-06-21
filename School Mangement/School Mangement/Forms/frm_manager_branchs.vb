@@ -66,10 +66,7 @@ Public Class frm_manager_branchs
         btn_new.Enabled = True
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_Branch.CellContentClick
-
-
-    End Sub
+   
 
     Private Sub dgv_Branch_Click(sender As Object, e As EventArgs) Handles dgv_Branch.Click
         Try
