@@ -51,6 +51,8 @@ Partial Class frm_student
         Me.Label9 = New System.Windows.Forms.Label()
         Me.cmb_gender = New System.Windows.Forms.ComboBox()
         Me.cmb_parent_name = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         CType(Me.picture_student, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dgv_student, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,6 +63,7 @@ Partial Class frm_student
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(820, 28)
         Me.Label1.Name = "Label1"
+        Me.Label1.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label1.Size = New System.Drawing.Size(62, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = ":رقم الطالب"
@@ -70,6 +73,7 @@ Partial Class frm_student
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(822, 88)
         Me.Label2.Name = "Label2"
+        Me.Label2.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label2.Size = New System.Drawing.Size(62, 17)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = ":اسم الطالب"
@@ -79,6 +83,7 @@ Partial Class frm_student
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(822, 203)
         Me.Label5.Name = "Label5"
+        Me.Label5.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label5.Size = New System.Drawing.Size(67, 17)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = ":تاريخ الميلاد"
@@ -86,7 +91,7 @@ Partial Class frm_student
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(53, 187)
+        Me.Label7.Location = New System.Drawing.Point(53, 177)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(89, 17)
         Me.Label7.TabIndex = 6
@@ -170,6 +175,7 @@ Partial Class frm_student
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(820, 144)
         Me.Label3.Name = "Label3"
+        Me.Label3.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label3.Size = New System.Drawing.Size(69, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = ":الرقم الوطني"
@@ -197,6 +203,7 @@ Partial Class frm_student
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(487, 210)
         Me.Label8.Name = "Label8"
+        Me.Label8.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label8.Size = New System.Drawing.Size(58, 17)
         Me.Label8.TabIndex = 23
         Me.Label8.Text = ":الحالـــــــة"
@@ -206,6 +213,7 @@ Partial Class frm_student
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(487, 88)
         Me.Label6.Name = "Label6"
+        Me.Label6.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label6.Size = New System.Drawing.Size(70, 17)
         Me.Label6.TabIndex = 22
         Me.Label6.Text = ":عنوان السكن"
@@ -215,6 +223,7 @@ Partial Class frm_student
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(487, 28)
         Me.Label4.Name = "Label4"
+        Me.Label4.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Label4.Size = New System.Drawing.Size(76, 17)
         Me.Label4.TabIndex = 21
         Me.Label4.Text = ":اسم ولي الامر"
@@ -300,11 +309,25 @@ Partial Class frm_student
         Me.cmb_parent_name.Size = New System.Drawing.Size(233, 24)
         Me.cmb_parent_name.TabIndex = 31
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(35, 200)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(125, 39)
+        Me.Button1.TabIndex = 32
+        Me.Button1.Text = "اختر صورة "
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'frm_student
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(911, 664)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cmb_parent_name)
         Me.Controls.Add(Me.cmb_gender)
         Me.Controls.Add(Me.Label9)
@@ -364,5 +387,7 @@ Partial Class frm_student
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents cmb_gender As System.Windows.Forms.ComboBox
     Friend WithEvents cmb_parent_name As System.Windows.Forms.ComboBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
 
 End Class

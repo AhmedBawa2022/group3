@@ -63,14 +63,15 @@ Public Class frm_student
             End If
             Exit Sub
         End If
-        Insert_Tbl_Students(txt_std_id.Text, txt_name.Text, txt_NID.Text, cmb_parent_name.SelectedValue, dtb_date.Value, cmb_gender.Text, txt_location.Text, Status.Checked)
+        Insert_Tbl_Students(txt_std_id.Text, txt_name.Text, txt_NID.Text, cmb_parent_name.SelectedValue, dtb_date.Value, cmb_gender.Text, txt_location.Text, picture_student, Status.Checked)
         loadall("View_Student_info", dgv_student)
         ClearControls()
+        picture_student.Image = New PictureBox().Image
         btn_delete.Enabled = False
         btn_edit.Enabled = False
         btn_save.Enabled = False
         btn_new.Enabled = True
-        MsgBox(dtb_date.Value.Year.ToString())
+        'MsgBox(dtb_date.Value.Year.ToString())
     End Sub
 
     Private Sub btn_new_Click(sender As Object, e As EventArgs) Handles btn_new.Click
@@ -142,7 +143,30 @@ Public Class frm_student
             Exit Sub
         Else
             Delete_Tbl_Students(False, txt_std_id.Text)
+            loadall("View_Student_info", dgv_student)
         End If
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        With OpenFileDialog1
+            .InitialDirectory = "C:\"
+            .Filter = "All Files|*.*|Bitmaps|*.bmp|GIFs|*.gif|JPEGs|*.jpg"
+            .FilterIndex = 2
+        End With
+
+        ' When the user clicks the Open button (DialogResult.OK is the only option;
+        ' there is not DialogResult.Open), display the image centered in the 
+        ' PictureBox and display the full path of the image.
+        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+            With picture_student
+                .Image = Image.FromFile(OpenFileDialog1.FileName)
+                .SizeMode = PictureBoxSizeMode.CenterImage
+                .BorderStyle = BorderStyle.Fixed3D
+            End With
+            Label7.Text = OpenFileDialog1.FileName
+        End If
+
 
     End Sub
 End Class

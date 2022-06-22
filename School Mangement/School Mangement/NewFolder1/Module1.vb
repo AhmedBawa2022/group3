@@ -1,4 +1,6 @@
 ﻿Imports System.Data.SqlClient
+Imports System.IO
+
 Module Module1
 
     Public ConStr As String = "Data Source= DESKTOP-A923AE2\SQLEXPRESS;Initial Catalog = DB1;integrated security=true"
@@ -94,7 +96,7 @@ Module Module1
             .CommandText = "Update Tbl_Debartments Set Debartment_Name = @Debartment_Name,Mon_Id = @Mon_Id,Manager_Id = @Manager_Id Where Debartment_Id = @Debartment_Id"
             .Parameters.Clear()
             .Parameters.AddWithValue("@Debartment_Id", SqlDbType.Int).Value = Debartment_Id
-            .Parameters.AddWithValue("@Debartment_Name", SqlDbType.varchar).Value = Debartment_Name
+            .Parameters.AddWithValue("@Debartment_Name", SqlDbType.VarChar).Value = Debartment_Name
             .Parameters.AddWithValue("@Mon_Id", SqlDbType.Int).Value = Mon_Id
             .Parameters.AddWithValue("@Manager_Id", SqlDbType.Int).Value = Manager_Id
         End With
@@ -187,12 +189,12 @@ Module Module1
 
     End Sub
 
-    Public Sub Insert_Tbl_Students(ByVal Student_Id As Int32, ByVal Student_Name As String, ByVal Student_NID As Long, ByVal Parents_Id As Int32, ByVal Birth_Date As Date, ByVal Gender As String, ByVal Address As String, ByVal Status As Boolean)
+    Public Sub Insert_Tbl_Students(ByVal Student_Id As Int32, ByVal Student_Name As String, ByVal Student_NID As Long, ByVal Parents_Id As Int32, ByVal Birth_Date As Date, ByVal Gender As String, ByVal Address As String, ByVal S_Image As PictureBox, ByVal Status As Boolean)
         Dim Cmd As New SqlCommand
         With Cmd
             .Connection = Con
             .CommandType = CommandType.Text
-            .CommandText = "Insert Into Tbl_Students (Student_Id,Student_Name,Student_NID,Parents_Id,Birth_Date,Gender,Address,Status)values(@Student_Id,@Student_Name,@Student_NID,@Parents_Id,@Birth_Date,@Gender,@Address,@Status)"
+            .CommandText = "Insert Into Tbl_Students (Student_Id,Student_Name,Student_NID,Parents_Id,Birth_Date,Gender,Address,S_Image,Status)values(@Student_Id,@Student_Name,@Student_NID,@Parents_Id,@Birth_Date,@Gender,@Address,@S_Image,@Status)"
             .Parameters.Clear()
             .Parameters.AddWithValue("@Student_Id", SqlDbType.Int).Value = Student_Id
             .Parameters.AddWithValue("@Student_Name", SqlDbType.VarChar).Value = Student_Name
@@ -201,7 +203,13 @@ Module Module1
             .Parameters.AddWithValue("@Birth_Date", SqlDbType.Date).Value = Birth_Date
             .Parameters.AddWithValue("@Gender", SqlDbType.VarChar).Value = Gender
             .Parameters.AddWithValue("@Address", SqlDbType.VarChar).Value = Address
-            '.Parameters.AddWithValue("@S_Image", SqlDbType.VarChar).Value = S_Image
+            Dim ms As New MemoryStream()
+            Dim bmpImage As New Bitmap(S_Image.Image)
+            bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+            Dim data As Byte() = ms.GetBuffer()
+            Dim p As New SqlParameter("@S_Image", SqlDbType.Image)
+            p.Value = data
+            .Parameters.Add(p)
             .Parameters.AddWithValue("@Status", SqlDbType.Bit).Value = Status
         End With
         If Con.State = 1 Then Con.Close()
@@ -253,6 +261,119 @@ Module Module1
         Cmd.ExecuteNonQuery()
         Con.Close()
         MsgBox("تم حذف السجل بنجاح", MsgBoxStyle.Information, "حذف")
+        Cmd = Nothing
+    End Sub
+
+    Public dt_student_tbl As New DataTable
+    Public Sub load_cmb_student(ByVal cmb_student As ComboBox, ByVal mefrom As Form)
+        cmb_student.DataSource = Nothing
+        cmb_student.Items.Clear()
+        cmb_student.Text = vbNullString
+        dt_student_tbl.Clear()
+        Dim cmd As New SqlCommand("select * from Tbl_Students", Con)
+        Try
+            If Con.State = 1 Then Con.Close()
+            Con.Open()
+            dt_student_tbl.Load(cmd.ExecuteReader)
+            Con.Close()
+            cmd = Nothing
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+            Con.Close()
+
+        End Try
+        If dt_student_tbl.Rows.Count <> 0 Then
+            With cmb_student
+                .DataSource = dt_student_tbl
+                .DisplayMember = "Student_Name"
+                .ValueMember = "Student_Id"
+            End With
+        End If
+        If cmb_student.Items.Count > 0 Then cmb_student.SelectedIndex = -1
+
+
+    End Sub
+
+    Public Sub Insert_Tbl_Parents(ByVal Parent_Id As Int32, ByVal Parent_NId As Long, ByVal Parent_Name As String, ByVal Gender As String, ByVal Job As String, ByVal Relative_Relation As String, ByVal phone As Long, ByVal Address_Home As String, ByVal p_image As PictureBox)
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Insert Into Tbl_Parents (Parent_Id,Parent_NId,Parent_Name,Gender,Job,Relative_Relation,phone,Address_Home,p_image)values(@Parent_Id,@Parent_NId,@Parent_Name,@Gender,@Job,@Relative_Relation,@phone,@Address_Home,@p_image)"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@Parent_Id", SqlDbType.Int).Value = Parent_Id
+            .Parameters.AddWithValue("@Parent_NId", SqlDbType.BigInt).Value = Parent_NId
+            .Parameters.AddWithValue("@Parent_Name", SqlDbType.VarChar).Value = Parent_Name
+            '.Parameters.AddWithValue("@Student_Id", SqlDbType.Int).Value = Student_Id
+            .Parameters.AddWithValue("@Gender", SqlDbType.VarChar).Value = Gender
+            .Parameters.AddWithValue("@Job", SqlDbType.VarChar).Value = Job
+            .Parameters.AddWithValue("@Relative_Relation", SqlDbType.VarChar).Value = Relative_Relation
+            .Parameters.AddWithValue("@phone", SqlDbType.BigInt).Value = phone
+            .Parameters.AddWithValue("@Address_Home", SqlDbType.VarChar).Value = Address_Home
+            Dim ms As New MemoryStream()
+            Dim bmpImage As New Bitmap(p_image.Image)
+            bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+            Dim data As Byte() = ms.GetBuffer()
+            Dim p As New SqlParameter("@p_image", SqlDbType.Image)
+            p.Value = data
+            .Parameters.Add(p)
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم إضافة السجل بنجاح", MsgBoxStyle.Information, "حفظ")
+        Cmd = Nothing
+    End Sub
+
+    Public Sub Update_Tbl_Parents(ByVal Parent_Id As Int32, ByVal Parent_NId As Long, ByVal Parent_Name As String, ByVal Gender As String, ByVal Job As String, ByVal Relative_Relation As String, ByVal phone As Long, ByVal Address_Home As String, ByVal p_image As PictureBox)
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Update Tbl_Parents Set Parent_NId = @Parent_NId,Parent_Name = @Parent_Name,Gender = @Gender,Job = @Job,Relative_Relation = @Relative_Relation,phone = @phone,Address_Home = @Address_Home,p_image = @p_image Where Parent_Id = @Parent_Id"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@Parent_Id", SqlDbType.Int).Value = Parent_Id
+            .Parameters.AddWithValue("@Parent_NId", SqlDbType.BigInt).Value = Parent_NId
+            .Parameters.AddWithValue("@Parent_Name", SqlDbType.VarChar).Value = Parent_Name
+            .Parameters.AddWithValue("@Gender", SqlDbType.VarChar).Value = Gender
+            .Parameters.AddWithValue("@Job", SqlDbType.VarChar).Value = Job
+            .Parameters.AddWithValue("@phone", SqlDbType.BigInt).Value = phone
+            .Parameters.AddWithValue("@Relative_Relation", SqlDbType.VarChar).Value = Relative_Relation
+            .Parameters.AddWithValue("@Address_Home", SqlDbType.VarChar).Value = Address_Home
+            Dim ms As New MemoryStream()
+            Dim bmpImage As New Bitmap(p_image.Image)
+            bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+            Dim data As Byte() = ms.GetBuffer()
+            Dim p As New SqlParameter("@p_image", SqlDbType.Image)
+            p.Value = data
+            .Parameters.Add(p)
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم تعديل السجل بنجاح", MsgBoxStyle.Information, "تعديل")
+        Cmd = Nothing
+    End Sub
+
+    Public Sub Delete_Tbl_Parents(ByVal ID_Position As Int32)
+
+
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Delete  From Tbl_Parents Where Parent_Id = @Parent_Id"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@Parent_Id", SqlDbType.Int).Value = ID_Position
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم حذف السجل.", MsgBoxStyle.Information, "حذف")
         Cmd = Nothing
     End Sub
 
