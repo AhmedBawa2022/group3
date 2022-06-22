@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\frm_absence.Designer.vb">
+      <DependentUpon>frm_absence.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_absence.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_bank.Designer.vb">
       <DependentUpon>frm_bank.vb</DependentUpon>
     </Compile>
@@ -104,6 +110,12 @@
       <DependentUpon>frm_level.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\frm_level.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frm_manager_monitoring.Designer.vb">
+      <DependentUpon>frm_manager_monitoring.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_manager_monitoring.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frm_student.Designer.vb">
@@ -230,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_location.resx">
       <DependentUpon>frm_location.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_manager_monitoring.resx">
+      <DependentUpon>frm_manager_monitoring.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_student.resx">
       <DependentUpon>frm_student.vb</DependentUpon>
