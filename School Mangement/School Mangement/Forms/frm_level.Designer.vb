@@ -26,164 +26,221 @@ Partial Class frm_level
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Status = New System.Windows.Forms.CheckBox()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.cmb_level_specialization = New System.Windows.Forms.ComboBox()
+        Me.cmb_year = New System.Windows.Forms.ComboBox()
+        Me.txt_level_id = New System.Windows.Forms.TextBox()
+        Me.btn_save = New System.Windows.Forms.Button()
+        Me.btn_edit = New System.Windows.Forms.Button()
+        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.btn_new = New System.Windows.Forms.Button()
+        Me.dgv_level = New System.Windows.Forms.DataGridView()
+        Me.txt_level_name = New System.Windows.Forms.TextBox()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.dgv_level, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(269, 40)
+        Me.Label1.Location = New System.Drawing.Point(328, 32)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(107, 17)
+        Me.Label1.Size = New System.Drawing.Size(109, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = ":رقم المرحلة الدراسية"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(269, 93)
+        Me.Label2.Location = New System.Drawing.Point(323, 67)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(107, 17)
+        Me.Label2.Size = New System.Drawing.Size(114, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = ":اسم المرحلة الدراسية"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(269, 149)
+        Me.Label3.Location = New System.Drawing.Point(387, 102)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(56, 17)
+        Me.Label3.Size = New System.Drawing.Size(50, 13)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = ":التخصص"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(269, 198)
+        Me.Label4.Location = New System.Drawing.Point(360, 141)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(72, 17)
+        Me.Label4.Size = New System.Drawing.Size(77, 13)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = ":العام الدراسي"
         '
-        'CheckBox1
+        'Status
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.ForeColor = System.Drawing.Color.Red
-        Me.CheckBox1.Location = New System.Drawing.Point(212, 255)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(49, 21)
-        Me.CheckBox1.TabIndex = 19
-        Me.CheckBox1.Text = "نشط"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Status.AutoSize = True
+        Me.Status.ForeColor = System.Drawing.Color.Red
+        Me.Status.Location = New System.Drawing.Point(266, 190)
+        Me.Status.Margin = New System.Windows.Forms.Padding(2)
+        Me.Status.Name = "Status"
+        Me.Status.Size = New System.Drawing.Size(49, 17)
+        Me.Status.TabIndex = 19
+        Me.Status.Text = "نشط"
+        Me.Status.UseVisualStyleBackColor = True
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(269, 255)
+        Me.Label8.Location = New System.Drawing.Point(380, 181)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(58, 17)
+        Me.Label8.Size = New System.Drawing.Size(57, 13)
         Me.Label8.TabIndex = 18
         Me.Label8.Text = ":الحالـــــــة"
         '
-        'ComboBox1
+        'cmb_level_specialization
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(12, 93)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(249, 24)
-        Me.ComboBox1.TabIndex = 20
+        Me.cmb_level_specialization.FormattingEnabled = True
+        Me.cmb_level_specialization.Items.AddRange(New Object() {"عام ", "علمي", "أدبي"})
+        Me.cmb_level_specialization.Location = New System.Drawing.Point(127, 102)
+        Me.cmb_level_specialization.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_level_specialization.Name = "cmb_level_specialization"
+        Me.cmb_level_specialization.Size = New System.Drawing.Size(188, 21)
+        Me.cmb_level_specialization.TabIndex = 21
         '
-        'ComboBox2
+        'cmb_year
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"عام ", "علمي", "أدبي"})
-        Me.ComboBox2.Location = New System.Drawing.Point(12, 149)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(249, 24)
-        Me.ComboBox2.TabIndex = 21
+        Me.cmb_year.FormattingEnabled = True
+        Me.cmb_year.Location = New System.Drawing.Point(127, 141)
+        Me.cmb_year.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_year.Name = "cmb_year"
+        Me.cmb_year.Size = New System.Drawing.Size(188, 21)
+        Me.cmb_year.TabIndex = 22
         '
-        'ComboBox3
+        'txt_level_id
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(12, 198)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(249, 24)
-        Me.ComboBox3.TabIndex = 22
+        Me.txt_level_id.Location = New System.Drawing.Point(127, 29)
+        Me.txt_level_id.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_level_id.Name = "txt_level_id"
+        Me.txt_level_id.ReadOnly = True
+        Me.txt_level_id.Size = New System.Drawing.Size(189, 20)
+        Me.txt_level_id.TabIndex = 23
         '
-        'TextBox1
+        'btn_save
         '
-        Me.TextBox1.Location = New System.Drawing.Point(12, 40)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(251, 22)
-        Me.TextBox1.TabIndex = 23
+        Me.btn_save.Location = New System.Drawing.Point(247, 359)
+        Me.btn_save.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_save.Name = "btn_save"
+        Me.btn_save.Size = New System.Drawing.Size(84, 37)
+        Me.btn_save.TabIndex = 27
+        Me.btn_save.Text = "حفــــــــــظ"
+        Me.btn_save.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btn_edit
         '
-        Me.Button5.Location = New System.Drawing.Point(24, 415)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(112, 45)
-        Me.Button5.TabIndex = 27
-        Me.Button5.Text = "حفــــــــــظ"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btn_edit.Location = New System.Drawing.Point(127, 359)
+        Me.btn_edit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_edit.Name = "btn_edit"
+        Me.btn_edit.Size = New System.Drawing.Size(84, 37)
+        Me.btn_edit.TabIndex = 26
+        Me.btn_edit.Text = "تعديــــــــــل"
+        Me.btn_edit.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_delete
         '
-        Me.Button4.Location = New System.Drawing.Point(212, 415)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(112, 45)
-        Me.Button4.TabIndex = 26
-        Me.Button4.Text = "تعديــــــــــل"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_delete.Location = New System.Drawing.Point(11, 359)
+        Me.btn_delete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.Size = New System.Drawing.Size(84, 37)
+        Me.btn_delete.TabIndex = 25
+        Me.btn_delete.Text = "حــــــــذف"
+        Me.btn_delete.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_new
         '
-        Me.Button3.Location = New System.Drawing.Point(24, 321)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(112, 45)
-        Me.Button3.TabIndex = 25
-        Me.Button3.Text = "حــــــــذف"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_new.Location = New System.Drawing.Point(353, 359)
+        Me.btn_new.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_new.Name = "btn_new"
+        Me.btn_new.Size = New System.Drawing.Size(84, 37)
+        Me.btn_new.TabIndex = 24
+        Me.btn_new.Text = "جديــــــــــد"
+        Me.btn_new.UseVisualStyleBackColor = True
         '
-        'Button1
+        'dgv_level
         '
-        Me.Button1.Location = New System.Drawing.Point(212, 321)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(112, 45)
-        Me.Button1.TabIndex = 24
-        Me.Button1.Text = "جديــــــــــد"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.dgv_level.AllowUserToAddRows = False
+        Me.dgv_level.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_level.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_level.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4})
+        Me.dgv_level.Location = New System.Drawing.Point(5, 225)
+        Me.dgv_level.Name = "dgv_level"
+        Me.dgv_level.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.dgv_level.Size = New System.Drawing.Size(432, 118)
+        Me.dgv_level.TabIndex = 28
+        '
+        'txt_level_name
+        '
+        Me.txt_level_name.Location = New System.Drawing.Point(127, 67)
+        Me.txt_level_name.Name = "txt_level_name"
+        Me.txt_level_name.Size = New System.Drawing.Size(188, 20)
+        Me.txt_level_name.TabIndex = 29
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "Level_Id"
+        Me.Column1.HeaderText = "رقم المرحلة"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "Level_Name"
+        Me.Column2.HeaderText = "اسم المرحلة الدراسية"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "Level_Specilization"
+        Me.Column3.HeaderText = "التخصص"
+        Me.Column3.Name = "Column3"
+        '
+        'Column4
+        '
+        Me.Column4.DataPropertyName = "Year_Name"
+        Me.Column4.HeaderText = "العام الدراسي"
+        Me.Column4.Name = "Column4"
         '
         'frm_level
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(396, 501)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.ClientSize = New System.Drawing.Size(448, 407)
+        Me.Controls.Add(Me.txt_level_name)
+        Me.Controls.Add(Me.dgv_level)
+        Me.Controls.Add(Me.btn_save)
+        Me.Controls.Add(Me.btn_edit)
+        Me.Controls.Add(Me.btn_delete)
+        Me.Controls.Add(Me.btn_new)
+        Me.Controls.Add(Me.txt_level_id)
+        Me.Controls.Add(Me.cmb_year)
+        Me.Controls.Add(Me.cmb_level_specialization)
+        Me.Controls.Add(Me.Status)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frm_level"
         Me.Text = "المرحلة"
+        CType(Me.dgv_level, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -192,14 +249,19 @@ Partial Class frm_level
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents Status As System.Windows.Forms.CheckBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents cmb_level_specialization As System.Windows.Forms.ComboBox
+    Friend WithEvents cmb_year As System.Windows.Forms.ComboBox
+    Friend WithEvents txt_level_id As System.Windows.Forms.TextBox
+    Friend WithEvents btn_save As System.Windows.Forms.Button
+    Friend WithEvents btn_edit As System.Windows.Forms.Button
+    Friend WithEvents btn_delete As System.Windows.Forms.Button
+    Friend WithEvents btn_new As System.Windows.Forms.Button
+    Friend WithEvents dgv_level As System.Windows.Forms.DataGridView
+    Friend WithEvents txt_level_name As System.Windows.Forms.TextBox
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

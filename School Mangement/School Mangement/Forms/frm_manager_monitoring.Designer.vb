@@ -2,7 +2,7 @@
 Partial Class frm_manager_monitoring
     Inherits System.Windows.Forms.Form
 
-  Form overrides dispose to clean up the component list.
+    'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()> _
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
@@ -162,4 +162,4 @@ Partial Class frm_manager_monitoring
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
-End Class
+
