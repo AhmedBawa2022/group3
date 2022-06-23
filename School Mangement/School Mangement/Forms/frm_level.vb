@@ -125,4 +125,14 @@ Public Class frm_level
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+
+    Private Sub btn_new_Click(sender As Object, e As EventArgs) Handles btn_new.Click
+        loadallStatus("View_level", dgv_level)
+        txt_level_id.Text = Max_Record1() + 1
+        txt_level_name.Text = vbNullString
+        load_cmb_year(cmb_year, Me)
+        btn_delete.Enabled = False
+        btn_edit.Enabled = False
+        btn_new.Enabled = True
+    End Sub
 End Class

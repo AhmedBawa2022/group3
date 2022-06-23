@@ -24,17 +24,20 @@ Partial Class frm_years
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.txt_year_id = New System.Windows.Forms.TextBox()
+        Me.txt_year_name = New System.Windows.Forms.TextBox()
+        Me.Status = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btn_new = New System.Windows.Forms.Button()
+        Me.btn_save = New System.Windows.Forms.Button()
+        Me.btn_edit = New System.Windows.Forms.Button()
+        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.btn_exit = New System.Windows.Forms.Button()
+        Me.dgv_year = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        CType(Me.dgv_year, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -42,7 +45,7 @@ Partial Class frm_years
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(420, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(60, 20)
+        Me.Label1.Size = New System.Drawing.Size(52, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "رقم السنة"
         '
@@ -51,133 +54,159 @@ Partial Class frm_years
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(440, 73)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(36, 20)
+        Me.Label2.Size = New System.Drawing.Size(32, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "السنة"
         '
-        'TextBox1
+        'txt_year_id
         '
-        Me.TextBox1.Location = New System.Drawing.Point(36, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(357, 26)
-        Me.TextBox1.TabIndex = 2
+        Me.txt_year_id.Location = New System.Drawing.Point(36, 32)
+        Me.txt_year_id.Name = "txt_year_id"
+        Me.txt_year_id.ReadOnly = True
+        Me.txt_year_id.Size = New System.Drawing.Size(357, 22)
+        Me.txt_year_id.TabIndex = 2
         '
-        'TextBox2
+        'txt_year_name
         '
-        Me.TextBox2.Location = New System.Drawing.Point(36, 67)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(357, 26)
-        Me.TextBox2.TabIndex = 3
+        Me.txt_year_name.Location = New System.Drawing.Point(36, 67)
+        Me.txt_year_name.Name = "txt_year_name"
+        Me.txt_year_name.Size = New System.Drawing.Size(357, 22)
+        Me.txt_year_name.TabIndex = 3
         '
-        'CheckBox1
+        'Status
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(390, 114)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(62, 24)
-        Me.CheckBox1.TabIndex = 4
-        Me.CheckBox1.Text = "الحالة"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Status.AutoSize = True
+        Me.Status.Location = New System.Drawing.Point(390, 114)
+        Me.Status.Name = "Status"
+        Me.Status.Size = New System.Drawing.Size(54, 20)
+        Me.Status.TabIndex = 4
+        Me.Status.Text = "الحالة"
+        Me.Status.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(349, 115)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(37, 20)
+        Me.Label3.Size = New System.Drawing.Size(33, 16)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "مفعلة"
         '
-        'Button1
+        'btn_new
         '
-        Me.Button1.Location = New System.Drawing.Point(397, 318)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 7
-        Me.Button1.Text = "جديد"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_new.Location = New System.Drawing.Point(397, 318)
+        Me.btn_new.Name = "btn_new"
+        Me.btn_new.Size = New System.Drawing.Size(75, 23)
+        Me.btn_new.TabIndex = 7
+        Me.btn_new.Text = "جديد"
+        Me.btn_new.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_save
         '
-        Me.Button2.Location = New System.Drawing.Point(307, 318)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 8
-        Me.Button2.Text = "اضافة"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_save.Location = New System.Drawing.Point(307, 318)
+        Me.btn_save.Name = "btn_save"
+        Me.btn_save.Size = New System.Drawing.Size(75, 23)
+        Me.btn_save.TabIndex = 8
+        Me.btn_save.Text = "حفظ"
+        Me.btn_save.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_edit
         '
-        Me.Button3.Location = New System.Drawing.Point(216, 318)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 9
-        Me.Button3.Text = "تعديل"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_edit.Location = New System.Drawing.Point(216, 318)
+        Me.btn_edit.Name = "btn_edit"
+        Me.btn_edit.Size = New System.Drawing.Size(75, 23)
+        Me.btn_edit.TabIndex = 9
+        Me.btn_edit.Text = "تعديل"
+        Me.btn_edit.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_delete
         '
-        Me.Button4.Location = New System.Drawing.Point(126, 318)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 10
-        Me.Button4.Text = "حذف"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_delete.Location = New System.Drawing.Point(126, 318)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.Size = New System.Drawing.Size(75, 23)
+        Me.btn_delete.TabIndex = 10
+        Me.btn_delete.Text = "حذف"
+        Me.btn_delete.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btn_exit
         '
-        Me.Button5.Location = New System.Drawing.Point(36, 318)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 11
-        Me.Button5.Text = "خروج"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btn_exit.Location = New System.Drawing.Point(36, 318)
+        Me.btn_exit.Name = "btn_exit"
+        Me.btn_exit.Size = New System.Drawing.Size(75, 23)
+        Me.btn_exit.TabIndex = 11
+        Me.btn_exit.Text = "خروج"
+        Me.btn_exit.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'dgv_year
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(36, 144)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(468, 150)
-        Me.DataGridView1.TabIndex = 12
+        Me.dgv_year.AllowUserToAddRows = False
+        Me.dgv_year.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_year.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_year.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3})
+        Me.dgv_year.Location = New System.Drawing.Point(36, 144)
+        Me.dgv_year.Name = "dgv_year"
+        Me.dgv_year.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.dgv_year.RowTemplate.Height = 24
+        Me.dgv_year.Size = New System.Drawing.Size(468, 150)
+        Me.dgv_year.TabIndex = 12
+        '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "Year_id"
+        Me.Column1.HeaderText = "رقم السنة"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "Year_Name"
+        Me.Column2.HeaderText = "اسم السنة"
+        Me.Column2.Name = "Column2"
+        '
+        'Column3
+        '
+        Me.Column3.DataPropertyName = "Status"
+        Me.Column3.HeaderText = "الحالة"
+        Me.Column3.Name = "Column3"
         '
         'frm_years
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(506, 367)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.dgv_year)
+        Me.Controls.Add(Me.btn_exit)
+        Me.Controls.Add(Me.btn_delete)
+        Me.Controls.Add(Me.btn_edit)
+        Me.Controls.Add(Me.btn_save)
+        Me.Controls.Add(Me.btn_new)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Status)
+        Me.Controls.Add(Me.txt_year_name)
+        Me.Controls.Add(Me.txt_year_id)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frm_years"
         Me.Text = "شاشة الاعوام"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_year, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
+    Friend WithEvents txt_year_id As System.Windows.Forms.TextBox
+    Friend WithEvents txt_year_name As System.Windows.Forms.TextBox
+    Friend WithEvents Status As System.Windows.Forms.CheckBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents btn_new As System.Windows.Forms.Button
+    Friend WithEvents btn_save As System.Windows.Forms.Button
+    Friend WithEvents btn_edit As System.Windows.Forms.Button
+    Friend WithEvents btn_delete As System.Windows.Forms.Button
+    Friend WithEvents btn_exit As System.Windows.Forms.Button
+    Friend WithEvents dgv_year As System.Windows.Forms.DataGridView
+    Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

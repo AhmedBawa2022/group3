@@ -6,8 +6,6 @@ Module Bawa
     Public ConStr As String = "Data Source= DESKTOP-A923AE2\SQLEXPRESS;Initial Catalog = DB1;integrated security=true"
     Public Con As New SqlClient.SqlConnection(ConStr)
 
-
-
     Public Function Max_Record(Tname As String, Field As String)
         Dim Number As Integer
         Try
