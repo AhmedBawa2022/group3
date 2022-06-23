@@ -19,18 +19,18 @@
 
     End Sub
 
-    Private Sub إدارةالمناطقToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إدارةالمناطقToolStripMenuItem.Click
+    Private Sub إدارةالمناطقToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frm_location.Show()
 
     End Sub
 
-    Private Sub إدارةالمصارفToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إدارةالمصارفToolStripMenuItem.Click
+    Private Sub إدارةالمصارفToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frm_bank.Show()
 
     End Sub
 
     Private Sub إدارةالمراقباتToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إدارةالمراقباتToolStripMenuItem.Click
-        'frm_()
+        frm_manager_monitoring.Show()
     End Sub
 
     Private Sub الفروعToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles الفروعToolStripMenuItem1.Click
@@ -39,5 +39,14 @@
 
     Private Sub المدارسToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles المدارسToolStripMenuItem.Click
         frm_school.Show()
+    End Sub
+
+    Private Sub جداولفرعيةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles جداولفرعيةToolStripMenuItem.Click
+        SubSetting.Show()
+
+    End Sub
+
+    Private Sub موظفيالمراقبةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles موظفيالمراقبةToolStripMenuItem.Click
+
     End Sub
 End Class

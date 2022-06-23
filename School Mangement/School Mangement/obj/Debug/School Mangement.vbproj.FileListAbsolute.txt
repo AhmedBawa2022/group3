@@ -64,3 +64,5 @@ C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\ob
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_years.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_student.resources
 C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_manager_monitoring.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.SubSetting.resources
+C:\Users\Ahmed Bawa\Documents\GitHub\group3\School Mangement\School Mangement\obj\Debug\School_Mangement.frm_holiday.resources

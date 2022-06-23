@@ -43,4 +43,12 @@
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        frm_absence.Show()
+    End Sub
+
+    Private Sub إجازاتToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إجازاتToolStripMenuItem.Click
+        frm_holiday.Show()
+    End Sub
 End Class

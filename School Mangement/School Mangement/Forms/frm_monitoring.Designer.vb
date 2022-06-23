@@ -27,24 +27,23 @@ Partial Class frm_monitoring
         Me.إضافةوتعديلبيناتفرعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.بحثعنفرعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.العامالدراسيToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.إضافةعامدراسيToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.شؤونالموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.موظفيالمراقبةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.مدراءالفروعToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.إضافةموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.احصائياتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.المعلمينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الطلابToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إعداداتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.تغييركلمةالسرToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الصلاحياتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.إدارةالمناطقToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.إدارةالمصارفToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.تغييركلمةالسرToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.إدارةالمراقباتToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.إضافةعامدراسيToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.بحثفيالاعوامالدراسيةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.إضافةموظفينToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.التنقلToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.الفروعToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.المدارسToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.جداولفرعيةToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -83,6 +82,18 @@ Partial Class frm_monitoring
         Me.العامالدراسيToolStripMenuItem.Size = New System.Drawing.Size(107, 24)
         Me.العامالدراسيToolStripMenuItem.Text = "العام الدراسي "
         '
+        'إضافةعامدراسيToolStripMenuItem
+        '
+        Me.إضافةعامدراسيToolStripMenuItem.Name = "إضافةعامدراسيToolStripMenuItem"
+        Me.إضافةعامدراسيToolStripMenuItem.Size = New System.Drawing.Size(238, 24)
+        Me.إضافةعامدراسيToolStripMenuItem.Text = "إضافة عام دراسي "
+        '
+        'بحثفيالاعوامالدراسيةToolStripMenuItem
+        '
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Name = "بحثفيالاعوامالدراسيةToolStripMenuItem"
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Size = New System.Drawing.Size(238, 24)
+        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Text = "بحث في الاعوام الدراسية "
+        '
         'شؤونالموظفينToolStripMenuItem
         '
         Me.شؤونالموظفينToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.موظفيالمراقبةToolStripMenuItem, Me.مدراءالفروعToolStripMenuItem, Me.إضافةموظفينToolStripMenuItem})
@@ -101,6 +112,12 @@ Partial Class frm_monitoring
         Me.مدراءالفروعToolStripMenuItem.Name = "مدراءالفروعToolStripMenuItem"
         Me.مدراءالفروعToolStripMenuItem.Size = New System.Drawing.Size(181, 24)
         Me.مدراءالفروعToolStripMenuItem.Text = "مدراء الفروع"
+        '
+        'إضافةموظفينToolStripMenuItem
+        '
+        Me.إضافةموظفينToolStripMenuItem.Name = "إضافةموظفينToolStripMenuItem"
+        Me.إضافةموظفينToolStripMenuItem.Size = New System.Drawing.Size(181, 24)
+        Me.إضافةموظفينToolStripMenuItem.Text = "إضافة موظفين "
         '
         'احصائياتToolStripMenuItem
         '
@@ -123,16 +140,10 @@ Partial Class frm_monitoring
         '
         'إعداداتToolStripMenuItem
         '
-        Me.إعداداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.إدارةالمناطقToolStripMenuItem, Me.إدارةالمصارفToolStripMenuItem, Me.الصلاحياتToolStripMenuItem, Me.تغييركلمةالسرToolStripMenuItem, Me.إدارةالمراقباتToolStripMenuItem})
+        Me.إعداداتToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.الصلاحياتToolStripMenuItem, Me.تغييركلمةالسرToolStripMenuItem, Me.إدارةالمراقباتToolStripMenuItem, Me.جداولفرعيةToolStripMenuItem})
         Me.إعداداتToolStripMenuItem.Name = "إعداداتToolStripMenuItem"
         Me.إعداداتToolStripMenuItem.Size = New System.Drawing.Size(72, 24)
         Me.إعداداتToolStripMenuItem.Text = "إعدادات"
-        '
-        'تغييركلمةالسرToolStripMenuItem
-        '
-        Me.تغييركلمةالسرToolStripMenuItem.Name = "تغييركلمةالسرToolStripMenuItem"
-        Me.تغييركلمةالسرToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
-        Me.تغييركلمةالسرToolStripMenuItem.Text = "تغيير كلمة السر"
         '
         'الصلاحياتToolStripMenuItem
         '
@@ -140,41 +151,17 @@ Partial Class frm_monitoring
         Me.الصلاحياتToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
         Me.الصلاحياتToolStripMenuItem.Text = "الصلاحيات"
         '
-        'إدارةالمناطقToolStripMenuItem
+        'تغييركلمةالسرToolStripMenuItem
         '
-        Me.إدارةالمناطقToolStripMenuItem.Name = "إدارةالمناطقToolStripMenuItem"
-        Me.إدارةالمناطقToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
-        Me.إدارةالمناطقToolStripMenuItem.Text = "إدارة المناطق"
-        '
-        'إدارةالمصارفToolStripMenuItem
-        '
-        Me.إدارةالمصارفToolStripMenuItem.Name = "إدارةالمصارفToolStripMenuItem"
-        Me.إدارةالمصارفToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
-        Me.إدارةالمصارفToolStripMenuItem.Text = "إدارة المصارف"
+        Me.تغييركلمةالسرToolStripMenuItem.Name = "تغييركلمةالسرToolStripMenuItem"
+        Me.تغييركلمةالسرToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
+        Me.تغييركلمةالسرToolStripMenuItem.Text = "تغيير كلمة السر"
         '
         'إدارةالمراقباتToolStripMenuItem
         '
         Me.إدارةالمراقباتToolStripMenuItem.Name = "إدارةالمراقباتToolStripMenuItem"
         Me.إدارةالمراقباتToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
         Me.إدارةالمراقباتToolStripMenuItem.Text = "إدارة المراقبات "
-        '
-        'إضافةعامدراسيToolStripMenuItem
-        '
-        Me.إضافةعامدراسيToolStripMenuItem.Name = "إضافةعامدراسيToolStripMenuItem"
-        Me.إضافةعامدراسيToolStripMenuItem.Size = New System.Drawing.Size(238, 24)
-        Me.إضافةعامدراسيToolStripMenuItem.Text = "إضافة عام دراسي "
-        '
-        'بحثفيالاعوامالدراسيةToolStripMenuItem
-        '
-        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Name = "بحثفيالاعوامالدراسيةToolStripMenuItem"
-        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Size = New System.Drawing.Size(238, 24)
-        Me.بحثفيالاعوامالدراسيةToolStripMenuItem.Text = "بحث في الاعوام الدراسية "
-        '
-        'إضافةموظفينToolStripMenuItem
-        '
-        Me.إضافةموظفينToolStripMenuItem.Name = "إضافةموظفينToolStripMenuItem"
-        Me.إضافةموظفينToolStripMenuItem.Size = New System.Drawing.Size(181, 24)
-        Me.إضافةموظفينToolStripMenuItem.Text = "إضافة موظفين "
         '
         'التنقلToolStripMenuItem
         '
@@ -186,14 +173,20 @@ Partial Class frm_monitoring
         'الفروعToolStripMenuItem1
         '
         Me.الفروعToolStripMenuItem1.Name = "الفروعToolStripMenuItem1"
-        Me.الفروعToolStripMenuItem1.Size = New System.Drawing.Size(152, 24)
+        Me.الفروعToolStripMenuItem1.Size = New System.Drawing.Size(131, 24)
         Me.الفروعToolStripMenuItem1.Text = "الفروع "
         '
         'المدارسToolStripMenuItem
         '
         Me.المدارسToolStripMenuItem.Name = "المدارسToolStripMenuItem"
-        Me.المدارسToolStripMenuItem.Size = New System.Drawing.Size(152, 24)
+        Me.المدارسToolStripMenuItem.Size = New System.Drawing.Size(131, 24)
         Me.المدارسToolStripMenuItem.Text = "المدارس"
+        '
+        'جداولفرعيةToolStripMenuItem
+        '
+        Me.جداولفرعيةToolStripMenuItem.Name = "جداولفرعيةToolStripMenuItem"
+        Me.جداولفرعيةToolStripMenuItem.Size = New System.Drawing.Size(173, 24)
+        Me.جداولفرعيةToolStripMenuItem.Text = "جداول فرعية"
         '
         'frm_monitoring
         '
@@ -229,8 +222,6 @@ Partial Class frm_monitoring
     Friend WithEvents الطلابToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents تغييركلمةالسرToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents الصلاحياتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents إدارةالمناطقToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents إدارةالمصارفToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents إدارةالمراقباتToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents إضافةعامدراسيToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents بحثفيالاعوامالدراسيةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
@@ -238,4 +229,5 @@ Partial Class frm_monitoring
     Friend WithEvents التنقلToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents الفروعToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents المدارسToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents جداولفرعيةToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class

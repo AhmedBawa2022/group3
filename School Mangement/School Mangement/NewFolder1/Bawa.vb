@@ -56,17 +56,16 @@ Module Bawa
 
     End Sub
 
-    Public Sub Insert_Tbl_Branch(ByVal Debartment_Id As Int32, ByVal Debartment_Name As String, ByVal Manager_Id As Int32, ByVal Mon_Id As Int32)
+    Public Sub Insert_Tbl_Branch(ByVal Debartment_Id As Int32, ByVal Debartment_Name As String, ByVal Monitor_ID As Int32)
         Dim Cmd As New SqlCommand
         With Cmd
             .Connection = Con
             .CommandType = CommandType.Text
-            .CommandText = "Insert Into Tbl_Debartments ( Debartment_Id,Debartment_Name,Manager_Id,Mon_Id)values(@Debartment_Id,@Debartment_Name,@Manager_Id,@Mon_Id)"
+            .CommandText = "Insert Into Tbl_Debartments ( Debartment_Id,Debartment_Name,Mon_Id)values(@Debartment_Id,@Debartment_Name,@Monitor_ID)"
             .Parameters.Clear()
             .Parameters.AddWithValue("@Debartment_Id", SqlDbType.Int).Value = Debartment_Id
             .Parameters.AddWithValue("@Debartment_Name", SqlDbType.VarChar).Value = Debartment_Name
-            .Parameters.AddWithValue("@Manager_Id", SqlDbType.Int).Value = Manager_Id
-            .Parameters.AddWithValue("@Mon_Id", SqlDbType.Int).Value = Mon_Id
+            .Parameters.AddWithValue("@Monitor_ID", SqlDbType.Int).Value = Monitor_ID
         End With
         If Con.State = 1 Then Con.Close()
         Con.Open()
@@ -88,17 +87,16 @@ Module Bawa
 
 
 
-    Public Sub Update_Tbl_Debartments(ByVal Debartment_Id As Int32, ByVal Debartment_Name As String, ByVal Mon_Id As Int32, ByVal Manager_Id As Int32)
+    Public Sub Update_Tbl_Debartments(ByVal Debartment_Id As Int32, ByVal Debartment_Name As String, ByVal Monitor_ID As Int32)
         Dim Cmd As New SqlCommand
         With Cmd
             .Connection = Con
             .CommandType = CommandType.Text
-            .CommandText = "Update Tbl_Debartments Set Debartment_Name = @Debartment_Name,Mon_Id = @Mon_Id,Manager_Id = @Manager_Id Where Debartment_Id = @Debartment_Id"
+            .CommandText = "Update Tbl_Debartments Set Debartment_Name = @Debartment_Name, Mon_Id=@Monitor_ID Where Debartment_Id = @Debartment_Id"
             .Parameters.Clear()
             .Parameters.AddWithValue("@Debartment_Id", SqlDbType.Int).Value = Debartment_Id
             .Parameters.AddWithValue("@Debartment_Name", SqlDbType.VarChar).Value = Debartment_Name
-            .Parameters.AddWithValue("@Mon_Id", SqlDbType.Int).Value = Mon_Id
-            .Parameters.AddWithValue("@Manager_Id", SqlDbType.Int).Value = Manager_Id
+            .Parameters.AddWithValue("@Monitor_ID", SqlDbType.Int).Value = Monitor_ID
         End With
         If Con.State = 1 Then Con.Close()
         Con.Open()

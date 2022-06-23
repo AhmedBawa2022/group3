@@ -27,13 +27,13 @@ Partial Class frm_bank
         Me.txt_idbank = New System.Windows.Forms.TextBox()
         Me.txt_namebank = New System.Windows.Forms.TextBox()
         Me.dgv_bank = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.btn_new = New System.Windows.Forms.Button()
         Me.btn_save = New System.Windows.Forms.Button()
         Me.btn_edit = New System.Windows.Forms.Button()
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_exit = New System.Windows.Forms.Button()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.dgv_bank, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,6 +82,18 @@ Partial Class frm_bank
         Me.dgv_bank.Size = New System.Drawing.Size(460, 150)
         Me.dgv_bank.TabIndex = 7
         '
+        'Column1
+        '
+        Me.Column1.DataPropertyName = "Bank_Id"
+        Me.Column1.HeaderText = "رقم المصرف"
+        Me.Column1.Name = "Column1"
+        '
+        'Column2
+        '
+        Me.Column2.DataPropertyName = "Bank_Name"
+        Me.Column2.HeaderText = "اسم المصرف"
+        Me.Column2.Name = "Column2"
+        '
         'btn_new
         '
         Me.btn_new.Location = New System.Drawing.Point(397, 289)
@@ -127,23 +139,12 @@ Partial Class frm_bank
         Me.btn_exit.Text = "خروج"
         Me.btn_exit.UseVisualStyleBackColor = True
         '
-        'Column1
-        '
-        Me.Column1.DataPropertyName = "Bank_Id"
-        Me.Column1.HeaderText = "رقم المصرف"
-        Me.Column1.Name = "Column1"
-        '
-        'Column2
-        '
-        Me.Column2.DataPropertyName = "Bank_Name"
-        Me.Column2.HeaderText = "اسم المصرف"
-        Me.Column2.Name = "Column2"
-        '
         'frm_bank
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(492, 344)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btn_exit)
         Me.Controls.Add(Me.btn_delete)
         Me.Controls.Add(Me.btn_edit)
@@ -155,8 +156,11 @@ Partial Class frm_bank
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frm_bank"
+        Me.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "شاشة البنك"
         CType(Me.dgv_bank, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

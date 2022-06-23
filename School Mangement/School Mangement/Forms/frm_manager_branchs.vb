@@ -19,15 +19,14 @@ Public Class frm_manager_branchs
     Public Sub ClearControls()
         Me.txt_id.Text = vbNullString
         Me.txt_name.Text = vbNullString
-        cmb_monitoring.SelectedIndex = -1
-        cmb_manager.SelectedIndex = -1
+        Me.cmb_monitoring.SelectedIndex = -1
     End Sub
     Private Sub frm_manager_branchs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'txt_id.Text = Max_Record("Tbl_Debartments", "Debartment_Id") + 1
         loadall("View_Debartment", dgv_Branch)
         txt_id.Text = Max_Record1() + 1
         load_cmb_monitoring(cmb_monitoring, Me)
-        load_cmb_Manager(cmb_manager, Me)
+        'load_cmb_Manager(cmb_manager, Me)
         btn_delete.Enabled = False
         btn_edit.Enabled = False
         btn_new.Enabled = True
@@ -42,7 +41,7 @@ Public Class frm_manager_branchs
             If cmb_monitoring.Text = vbNullString Then cmb_monitoring.Focus()
             Exit Sub
         End If
-        Insert_Tbl_Branch(txt_id.Text, txt_name.Text, cmb_manager.SelectedValue, cmb_monitoring.SelectedValue)
+        Insert_Tbl_Branch(txt_id.Text, txt_name.Text, cmb_monitoring.SelectedValue)
         ClearControls()
         loadall("View_Debartment", dgv_Branch)
         btn_delete.Enabled = False
@@ -57,7 +56,7 @@ Public Class frm_manager_branchs
             If cmb_monitoring.Text = vbNullString Then cmb_monitoring.Focus()
             Exit Sub
         End If
-        Update_Tbl_Debartments(txt_id.Text, txt_name.Text, cmb_manager.SelectedValue, cmb_monitoring.SelectedValue)
+        Update_Tbl_Debartments(txt_id.Text, txt_name.Text, cmb_monitoring.SelectedValue)
         loadall("View_Debartment", dgv_Branch)
         ClearControls()
         btn_delete.Enabled = False
@@ -74,7 +73,7 @@ Public Class frm_manager_branchs
                 Me.txt_id.Text = .CurrentRow.Cells(0).Value.ToString()
                 Me.txt_name.Text = .CurrentRow.Cells(1).Value.ToString()
                 Me.cmb_monitoring.Text = .CurrentRow.Cells(2).Value.ToString()
-                Me.cmb_manager.Text = .CurrentRow.Cells(3).Value.ToString()
+                '  Me.cmb_manager.Text = .CurrentRow.Cells(3).Value.ToString()
 
             End With
             btn_delete.Enabled = True

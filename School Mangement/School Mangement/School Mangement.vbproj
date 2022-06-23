@@ -106,6 +106,12 @@
     <Compile Include="Forms\frm_grade.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frm_holiday.Designer.vb">
+      <DependentUpon>frm_holiday.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_holiday.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_level.Designer.vb">
       <DependentUpon>frm_level.vb</DependentUpon>
     </Compile>
@@ -209,6 +215,12 @@
     <Compile Include="Forms\frm_years.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\SubSetting.Designer.vb">
+      <DependentUpon>SubSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SubSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -238,6 +250,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_class.resx">
       <DependentUpon>frm_class.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_holiday.resx">
+      <DependentUpon>frm_holiday.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_level.resx">
       <DependentUpon>frm_level.vb</DependentUpon>
@@ -289,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_years.resx">
       <DependentUpon>frm_years.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SubSetting.resx">
+      <DependentUpon>SubSetting.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
