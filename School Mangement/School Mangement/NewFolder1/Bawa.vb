@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Imports System.IO
 
-Module Module1
+Module Bawa
 
     Public ConStr As String = "Data Source= DESKTOP-A923AE2\SQLEXPRESS;Initial Catalog = DB1;integrated security=true"
     Public Con As New SqlClient.SqlConnection(ConStr)

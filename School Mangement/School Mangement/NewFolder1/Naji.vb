@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 
-Module Module2
+Module Naji
     'Public ConStr As String = "Data Source= DESKTOP-SMJSBIB\SQLEXPRESS;Initial Catalog = DB1;integrated security=true"
     'Public Con As New SqlClient.SqlConnection(ConStr)
 

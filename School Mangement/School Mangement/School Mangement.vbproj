@@ -225,8 +225,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="NewFolder1\Ali.vb" />
-    <Compile Include="NewFolder1\Module1.vb" />
-    <Compile Include="NewFolder1\Module2.vb" />
+    <Compile Include="NewFolder1\Aota.vb" />
+    <Compile Include="NewFolder1\Bawa.vb" />
+    <Compile Include="NewFolder1\Naji.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\frm_bank.resx">
