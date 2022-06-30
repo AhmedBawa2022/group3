@@ -52,7 +52,7 @@ Partial Class frm_absence
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(351, 44)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(31, 16)
+        Me.Label1.Size = New System.Drawing.Size(36, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "الرقم"
         '
@@ -61,7 +61,7 @@ Partial Class frm_absence
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(351, 73)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(75, 16)
+        Me.Label2.Size = New System.Drawing.Size(89, 20)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "العام الدراسي "
         '
@@ -70,7 +70,7 @@ Partial Class frm_absence
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(351, 103)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 16)
+        Me.Label3.Size = New System.Drawing.Size(106, 20)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "المرحلة الدراسية "
         '
@@ -79,7 +79,7 @@ Partial Class frm_absence
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(351, 134)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(79, 16)
+        Me.Label4.Size = New System.Drawing.Size(99, 20)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "الصف الدراسي "
         '
@@ -88,7 +88,7 @@ Partial Class frm_absence
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(348, 170)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(82, 16)
+        Me.Label5.Size = New System.Drawing.Size(98, 20)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "الشعبة الدراسية "
         '
@@ -97,7 +97,7 @@ Partial Class frm_absence
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(351, 202)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 16)
+        Me.Label6.Size = New System.Drawing.Size(76, 20)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "اسم الطالب "
         '
@@ -106,7 +106,7 @@ Partial Class frm_absence
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(351, 242)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 16)
+        Me.Label7.Size = New System.Drawing.Size(83, 20)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "تاريخ الغياب "
         '
@@ -115,7 +115,7 @@ Partial Class frm_absence
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(351, 280)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(66, 16)
+        Me.Label8.Size = New System.Drawing.Size(79, 20)
         Me.Label8.TabIndex = 7
         Me.Label8.Text = "سبب الغياب "
         '
@@ -124,7 +124,7 @@ Partial Class frm_absence
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(351, 314)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(78, 16)
+        Me.Label9.Size = New System.Drawing.Size(93, 20)
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "عدد ايام الغياب"
         '
@@ -133,7 +133,7 @@ Partial Class frm_absence
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(351, 351)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(54, 16)
+        Me.Label10.Size = New System.Drawing.Size(66, 20)
         Me.Label10.TabIndex = 9
         Me.Label10.Text = "ملاحظات "
         '
@@ -142,7 +142,7 @@ Partial Class frm_absence
         Me.TextBox1.Location = New System.Drawing.Point(62, 38)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(268, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(268, 26)
         Me.TextBox1.TabIndex = 10
         '
         'ComboBox1
@@ -150,7 +150,7 @@ Partial Class frm_absence
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(62, 67)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(268, 24)
+        Me.ComboBox1.Size = New System.Drawing.Size(268, 28)
         Me.ComboBox1.TabIndex = 11
         '
         'ComboBox2
@@ -158,7 +158,7 @@ Partial Class frm_absence
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(62, 97)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(268, 24)
+        Me.ComboBox2.Size = New System.Drawing.Size(268, 28)
         Me.ComboBox2.TabIndex = 12
         '
         'ComboBox3
@@ -166,7 +166,7 @@ Partial Class frm_absence
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Location = New System.Drawing.Point(62, 129)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(268, 24)
+        Me.ComboBox3.Size = New System.Drawing.Size(268, 28)
         Me.ComboBox3.TabIndex = 13
         '
         'ComboBox4
@@ -174,7 +174,7 @@ Partial Class frm_absence
         Me.ComboBox4.FormattingEnabled = True
         Me.ComboBox4.Location = New System.Drawing.Point(62, 165)
         Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(268, 24)
+        Me.ComboBox4.Size = New System.Drawing.Size(268, 28)
         Me.ComboBox4.TabIndex = 14
         '
         'ComboBox5
@@ -182,14 +182,14 @@ Partial Class frm_absence
         Me.ComboBox5.FormattingEnabled = True
         Me.ComboBox5.Location = New System.Drawing.Point(62, 198)
         Me.ComboBox5.Name = "ComboBox5"
-        Me.ComboBox5.Size = New System.Drawing.Size(268, 24)
+        Me.ComboBox5.Size = New System.Drawing.Size(268, 28)
         Me.ComboBox5.TabIndex = 15
         '
         'DateTimePicker1
         '
         Me.DateTimePicker1.Location = New System.Drawing.Point(62, 239)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(268, 22)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(268, 26)
         Me.DateTimePicker1.TabIndex = 16
         '
         'ComboBox6
@@ -197,28 +197,28 @@ Partial Class frm_absence
         Me.ComboBox6.FormattingEnabled = True
         Me.ComboBox6.Location = New System.Drawing.Point(62, 274)
         Me.ComboBox6.Name = "ComboBox6"
-        Me.ComboBox6.Size = New System.Drawing.Size(268, 24)
+        Me.ComboBox6.Size = New System.Drawing.Size(268, 28)
         Me.ComboBox6.TabIndex = 17
         '
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(62, 345)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(268, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(268, 26)
         Me.TextBox2.TabIndex = 18
         '
         'NumericUpDown1
         '
         Me.NumericUpDown1.Location = New System.Drawing.Point(62, 309)
         Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(268, 22)
+        Me.NumericUpDown1.Size = New System.Drawing.Size(268, 26)
         Me.NumericUpDown1.TabIndex = 19
         '
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(234, 392)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(203, 23)
+        Me.Button1.Size = New System.Drawing.Size(203, 37)
         Me.Button1.TabIndex = 20
         Me.Button1.Text = "حفظ التغيرات "
         Me.Button1.UseVisualStyleBackColor = True
@@ -227,16 +227,16 @@ Partial Class frm_absence
         '
         Me.Button2.Location = New System.Drawing.Point(62, 392)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(153, 23)
+        Me.Button2.Size = New System.Drawing.Size(166, 37)
         Me.Button2.TabIndex = 21
         Me.Button2.Text = "خروج"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'abs_and_pres
+        'frm_absence
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(461, 441)
+        Me.ClientSize = New System.Drawing.Size(464, 441)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.NumericUpDown1)
@@ -259,9 +259,9 @@ Partial Class frm_absence
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.Name = "abs_and_pres"
+        Me.Name = "frm_absence"
         Me.Text = "شاشة الغياب للطالب"
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

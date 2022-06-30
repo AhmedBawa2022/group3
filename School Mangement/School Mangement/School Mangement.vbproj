@@ -124,6 +124,12 @@
     <Compile Include="Forms\frm_manager_monitoring.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\frm_newFanction.Designer.vb">
+      <DependentUpon>frm_newFanction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frm_newFanction.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\frm_student.Designer.vb">
       <DependentUpon>frm_student.vb</DependentUpon>
     </Compile>
@@ -242,6 +248,9 @@
     <Compile Include="NewFolder1\Naji.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Forms\frm_absence.resx">
+      <DependentUpon>frm_absence.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_bank.resx">
       <DependentUpon>frm_bank.vb</DependentUpon>
     </EmbeddedResource>
@@ -250,6 +259,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_class.resx">
       <DependentUpon>frm_class.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_employees.resx">
+      <DependentUpon>frm_employees.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_holiday.resx">
       <DependentUpon>frm_holiday.vb</DependentUpon>
@@ -262,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_manager_monitoring.resx">
       <DependentUpon>frm_manager_monitoring.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frm_newFanction.resx">
+      <DependentUpon>frm_newFanction.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frm_student.resx">
       <DependentUpon>frm_student.vb</DependentUpon>
