@@ -63,6 +63,7 @@ Module Naji
         MsgBox("تم حذف السجل بنجاح", MsgBoxStyle.Information, "حذف")
         Cmd = Nothing
     End Sub
+
     'Public Sub loadallStatus(ByVal tblName As String, ByVal dgv As DataGridView)
     '    Dim dt As New DataTable
     '    Dim da As New SqlDataAdapter
@@ -128,11 +129,6 @@ Module Naji
         MsgBox("تم حذف السجل بنجاح", MsgBoxStyle.Information, "حذف")
         Cmd = Nothing
     End Sub
-
-
-
-
-
     Public dt_Tbl_Years As New DataTable
     Public dt_Tbl_Levels As New DataTable
 
@@ -161,7 +157,7 @@ Module Naji
         With Cmd
             .Connection = Con
             .CommandType = CommandType.Text
-            .CommandText = "Update Tbl_Classes Set ClassName = @ClassName,Year_ID = @Year_ID,Level_ID = @Level_ID,Status=@Status"
+            .CommandText = "Update Tbl_Classes Set ClassName = @ClassName,Year_ID = @Year_ID,Level_ID = @Level_ID,Status=@Status where Class_ID=@Class_ID "
             .Parameters.Clear()
             .Parameters.AddWithValue("@Class_ID", SqlDbType.Int).Value = Class_ID
             .Parameters.AddWithValue("@ClassName", SqlDbType.NChar).Value = ClassName
@@ -202,7 +198,65 @@ Module Naji
         dgv.AutoGenerateColumns = False
         dgv.DataSource = dt
     End Sub
+
+    Public dt_Tbl_class As New DataTable
+    Public Sub Insert_Tbl_section(ByVal txt_section_id As Int32, ByVal txt_section_name As String, ByVal Year_ID As Int32, ByVal Level_Id As Int32, ByVal Class_ID As Int32, ByVal Status As Boolean)
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Insert Into Tbl_Sections (Section_ID,Section_Name,Year_ID,Level_ID,Class_ID,Status)values(@Section_ID,@Section_Name,@Year_ID,@Level_ID,@Class_ID,@Status)"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@Section_ID", SqlDbType.Int).Value = txt_section_id
+            .Parameters.AddWithValue("@Section_Name", SqlDbType.NChar).Value = txt_section_name
+            .Parameters.AddWithValue("@Year_ID", SqlDbType.Int).Value = Year_ID
+            .Parameters.AddWithValue("@Level_ID", SqlDbType.Int).Value = Level_Id
+            .Parameters.AddWithValue("@Class_ID", SqlDbType.Int).Value = Class_ID
+            .Parameters.AddWithValue("@Status", SqlDbType.Bit).Value = Status
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم إضافة السجل بنجاح", MsgBoxStyle.Information, "حفظ")
+        Cmd = Nothing
+    End Sub
+    Public Sub Update_Tbl_section(ByVal txt_section_id As Int32, ByVal txt_section_name As String, ByVal Year_ID As Int32, ByVal Level_Id As Int32, ByVal Class_ID As Int32, ByVal Status As Boolean)
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Update Tbl_Sections Set Section_Name = @Section_Name,Year_ID = @Year_ID,Level_ID = @Level_ID,Class_ID = @Class_ID,Status=@Status where Section_ID=@Section_ID"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@Section_ID", SqlDbType.Int).Value = txt_section_id
+            .Parameters.AddWithValue("@Section_Name", SqlDbType.NChar).Value = txt_section_name
+            .Parameters.AddWithValue("@Year_ID", SqlDbType.Int).Value = Year_ID
+            .Parameters.AddWithValue("@Level_ID", SqlDbType.Int).Value = Level_Id
+            .Parameters.AddWithValue("@Class_ID", SqlDbType.Int).Value = Class_ID
+            .Parameters.AddWithValue("@Status", SqlDbType.Bit).Value = Status
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم تعديل السجل بنجاح", MsgBoxStyle.Information, "تعديل")
+        Cmd = Nothing
+    End Sub
+    Public Sub Delete_Tbl_section(ByVal Status As Boolean, ByVal Section_ID As Int32)
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Delete from Tbl_Sections  Where Section_ID = @Section_ID"
+            .Parameters.Clear()
+            '.Parameters.AddWithValue("@Status", SqlDbType.Bit).Value = Status
+            .Parameters.AddWithValue("@Section_ID", SqlDbType.BigInt).Value = Section_ID
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم حذف السجل بنجاح", MsgBoxStyle.Information, "حذف")
+        Cmd = Nothing
+    End Sub
 End Module
-
-
-

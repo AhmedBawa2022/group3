@@ -23,25 +23,24 @@ Partial Class frm_manger_divition
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Status = New System.Windows.Forms.CheckBox()
+        Me.cmb_class = New System.Windows.Forms.ComboBox()
+        Me.cmb_level = New System.Windows.Forms.ComboBox()
+        Me.cmb_year = New System.Windows.Forms.ComboBox()
+        Me.txt_section_name = New System.Windows.Forms.TextBox()
+        Me.txt_section_id = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.btn_exit = New System.Windows.Forms.Button()
+        Me.btn_delete = New System.Windows.Forms.Button()
+        Me.btn_edit = New System.Windows.Forms.Button()
+        Me.btn_save = New System.Windows.Forms.Button()
+        Me.btn_new = New System.Windows.Forms.Button()
+        Me.dgv_section = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -49,18 +48,17 @@ Partial Class frm_manger_divition
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv_section, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.Status)
+        Me.GroupBox1.Controls.Add(Me.cmb_class)
+        Me.GroupBox1.Controls.Add(Me.cmb_level)
+        Me.GroupBox1.Controls.Add(Me.cmb_year)
+        Me.GroupBox1.Controls.Add(Me.txt_section_name)
+        Me.GroupBox1.Controls.Add(Me.txt_section_id)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
@@ -69,79 +67,80 @@ Partial Class frm_manger_divition
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Font = New System.Drawing.Font("Arial", 10.0!)
         Me.GroupBox1.ForeColor = System.Drawing.Color.OrangeRed
-        Me.GroupBox1.Location = New System.Drawing.Point(233, 12)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(20, 10)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupBox1.Size = New System.Drawing.Size(579, 258)
+        Me.GroupBox1.Size = New System.Drawing.Size(589, 231)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "البيانات"
         '
-        'CheckBox1
+        'Status
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.CheckBox1.Location = New System.Drawing.Point(360, 218)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(95, 23)
-        Me.CheckBox1.TabIndex = 11
-        Me.CheckBox1.Text = "مفعلـــــــــة"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Status.AutoSize = True
+        Me.Status.Font = New System.Drawing.Font("Arial", 10.0!)
+        Me.Status.Location = New System.Drawing.Point(409, 207)
+        Me.Status.Margin = New System.Windows.Forms.Padding(2)
+        Me.Status.Name = "Status"
+        Me.Status.Size = New System.Drawing.Size(78, 20)
+        Me.Status.TabIndex = 11
+        Me.Status.Text = "مفعلـــــــــة"
+        Me.Status.UseVisualStyleBackColor = True
         '
-        'ComboBox3
+        'cmb_class
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(40, 172)
-        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(423, 27)
-        Me.ComboBox3.TabIndex = 10
+        Me.cmb_class.FormattingEnabled = True
+        Me.cmb_class.Location = New System.Drawing.Point(169, 165)
+        Me.cmb_class.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_class.Name = "cmb_class"
+        Me.cmb_class.Size = New System.Drawing.Size(318, 24)
+        Me.cmb_class.TabIndex = 10
         '
-        'ComboBox2
+        'cmb_level
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(40, 135)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(423, 27)
-        Me.ComboBox2.TabIndex = 9
+        Me.cmb_level.FormattingEnabled = True
+        Me.cmb_level.Location = New System.Drawing.Point(169, 127)
+        Me.cmb_level.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_level.Name = "cmb_level"
+        Me.cmb_level.Size = New System.Drawing.Size(318, 24)
+        Me.cmb_level.TabIndex = 9
         '
-        'ComboBox1
+        'cmb_year
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(40, 98)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(423, 27)
-        Me.ComboBox1.TabIndex = 8
+        Me.cmb_year.FormattingEnabled = True
+        Me.cmb_year.Location = New System.Drawing.Point(169, 89)
+        Me.cmb_year.Margin = New System.Windows.Forms.Padding(2)
+        Me.cmb_year.Name = "cmb_year"
+        Me.cmb_year.Size = New System.Drawing.Size(318, 24)
+        Me.cmb_year.TabIndex = 8
         '
-        'TextBox2
+        'txt_section_name
         '
-        Me.TextBox2.Location = New System.Drawing.Point(40, 64)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(423, 27)
-        Me.TextBox2.TabIndex = 7
+        Me.txt_section_name.Location = New System.Drawing.Point(169, 53)
+        Me.txt_section_name.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_section_name.Name = "txt_section_name"
+        Me.txt_section_name.Size = New System.Drawing.Size(318, 23)
+        Me.txt_section_name.TabIndex = 7
         '
-        'TextBox1
+        'txt_section_id
         '
-        Me.TextBox1.Location = New System.Drawing.Point(40, 31)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(423, 27)
-        Me.TextBox1.TabIndex = 6
+        Me.txt_section_id.Location = New System.Drawing.Point(169, 21)
+        Me.txt_section_id.Margin = New System.Windows.Forms.Padding(2)
+        Me.txt_section_id.Name = "txt_section_id"
+        Me.txt_section_id.ReadOnly = True
+        Me.txt_section_id.Size = New System.Drawing.Size(318, 23)
+        Me.txt_section_id.TabIndex = 6
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.Label6.Location = New System.Drawing.Point(471, 222)
+        Me.Label6.Location = New System.Drawing.Point(492, 208)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 19)
+        Me.Label6.Size = New System.Drawing.Size(51, 16)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "الحالـــــة:"
         '
@@ -150,9 +149,10 @@ Partial Class frm_manger_divition
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Arial", 10.0!)
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(471, 172)
+        Me.Label5.Location = New System.Drawing.Point(492, 165)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(99, 19)
+        Me.Label5.Size = New System.Drawing.Size(81, 16)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "الصف الدراسي:"
         '
@@ -161,9 +161,10 @@ Partial Class frm_manger_divition
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Arial", 10.0!)
         Me.Label4.ForeColor = System.Drawing.Color.Black
-        Me.Label4.Location = New System.Drawing.Point(468, 135)
+        Me.Label4.Location = New System.Drawing.Point(490, 127)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(106, 19)
+        Me.Label4.Size = New System.Drawing.Size(86, 16)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "المرحلة الدراسية:"
         '
@@ -172,9 +173,10 @@ Partial Class frm_manger_divition
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Arial", 10.0!)
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(471, 98)
+        Me.Label3.Location = New System.Drawing.Point(492, 89)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(89, 19)
+        Me.Label3.Size = New System.Drawing.Size(72, 16)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "العام الدراسي:"
         '
@@ -183,9 +185,10 @@ Partial Class frm_manger_divition
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 10.0!)
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(468, 64)
+        Me.Label2.Location = New System.Drawing.Point(490, 53)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 19)
+        Me.Label2.Size = New System.Drawing.Size(58, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "اسم الشعبة:"
         '
@@ -194,178 +197,171 @@ Partial Class frm_manger_divition
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 10.0!)
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(471, 31)
+        Me.Label1.Location = New System.Drawing.Point(492, 21)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(72, 19)
+        Me.Label1.Size = New System.Drawing.Size(59, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "رقم الشعبة:"
         '
-        'GroupBox2
+        'btn_exit
         '
-        Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.Button3)
-        Me.GroupBox2.Controls.Add(Me.Button2)
-        Me.GroupBox2.Controls.Add(Me.Button1)
-        Me.GroupBox2.Location = New System.Drawing.Point(27, 12)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.GroupBox2.Size = New System.Drawing.Size(151, 258)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
+        Me.btn_exit.Font = New System.Drawing.Font("Arial", 10.0!)
+        Me.btn_exit.Location = New System.Drawing.Point(20, 414)
+        Me.btn_exit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_exit.Name = "btn_exit"
+        Me.btn_exit.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btn_exit.Size = New System.Drawing.Size(104, 32)
+        Me.btn_exit.TabIndex = 6
+        Me.btn_exit.Text = "خروج"
+        Me.btn_exit.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_exit.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btn_delete
         '
-        Me.Button5.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.Button5.Location = New System.Drawing.Point(5, 209)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button5.Size = New System.Drawing.Size(139, 39)
-        Me.Button5.TabIndex = 6
-        Me.Button5.Text = "خروج"
-        Me.Button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btn_delete.Font = New System.Drawing.Font("Arial", 10.0!)
+        Me.btn_delete.Location = New System.Drawing.Point(132, 414)
+        Me.btn_delete.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_delete.Name = "btn_delete"
+        Me.btn_delete.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btn_delete.Size = New System.Drawing.Size(104, 32)
+        Me.btn_delete.TabIndex = 5
+        Me.btn_delete.Text = "حذف"
+        Me.btn_delete.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_delete.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btn_edit
         '
-        Me.Button4.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.Button4.Location = New System.Drawing.Point(5, 160)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button4.Size = New System.Drawing.Size(139, 39)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "حذف"
-        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btn_edit.Font = New System.Drawing.Font("Arial", 10.0!)
+        Me.btn_edit.Location = New System.Drawing.Point(268, 414)
+        Me.btn_edit.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_edit.Name = "btn_edit"
+        Me.btn_edit.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btn_edit.Size = New System.Drawing.Size(104, 32)
+        Me.btn_edit.TabIndex = 4
+        Me.btn_edit.Text = "تعديل"
+        Me.btn_edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_edit.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btn_save
         '
-        Me.Button3.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.Button3.Location = New System.Drawing.Point(5, 110)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button3.Size = New System.Drawing.Size(139, 39)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "تعديل"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btn_save.Font = New System.Drawing.Font("Arial", 10.0!)
+        Me.btn_save.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_save.Location = New System.Drawing.Point(385, 414)
+        Me.btn_save.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_save.Name = "btn_save"
+        Me.btn_save.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btn_save.Size = New System.Drawing.Size(104, 32)
+        Me.btn_save.TabIndex = 3
+        Me.btn_save.Text = "حفظ"
+        Me.btn_save.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_save.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_new
         '
-        Me.Button2.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.Button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.Location = New System.Drawing.Point(5, 63)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button2.Size = New System.Drawing.Size(139, 39)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "حفظ"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_new.Font = New System.Drawing.Font("Arial", 10.0!)
+        Me.btn_new.Location = New System.Drawing.Point(505, 414)
+        Me.btn_new.Margin = New System.Windows.Forms.Padding(2)
+        Me.btn_new.Name = "btn_new"
+        Me.btn_new.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.btn_new.Size = New System.Drawing.Size(104, 32)
+        Me.btn_new.TabIndex = 2
+        Me.btn_new.Text = "جديد"
+        Me.btn_new.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_new.UseVisualStyleBackColor = True
         '
-        'Button1
+        'dgv_section
         '
-        Me.Button1.Font = New System.Drawing.Font("Arial", 10.0!)
-        Me.Button1.Location = New System.Drawing.Point(5, 15)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.Button1.Size = New System.Drawing.Size(139, 39)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "جديد"
-        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 302)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(793, 185)
-        Me.DataGridView1.TabIndex = 2
+        Me.dgv_section.AllowUserToAddRows = False
+        Me.dgv_section.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_section.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_section.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6})
+        Me.dgv_section.Location = New System.Drawing.Point(20, 245)
+        Me.dgv_section.Margin = New System.Windows.Forms.Padding(2)
+        Me.dgv_section.Name = "dgv_section"
+        Me.dgv_section.RightToLeft = System.Windows.Forms.RightToLeft.Yes
+        Me.dgv_section.RowTemplate.Height = 24
+        Me.dgv_section.Size = New System.Drawing.Size(595, 150)
+        Me.dgv_section.TabIndex = 2
         '
         'Column1
         '
+        Me.Column1.DataPropertyName = "Section_ID"
         Me.Column1.HeaderText = "رقم الشعبة"
         Me.Column1.Name = "Column1"
         '
         'Column2
         '
+        Me.Column2.DataPropertyName = "Section_Name"
         Me.Column2.HeaderText = "اسم الشعبة"
         Me.Column2.Name = "Column2"
         '
         'Column3
         '
+        Me.Column3.DataPropertyName = "Year_Name"
         Me.Column3.HeaderText = "العام الدراسي"
         Me.Column3.Name = "Column3"
         '
         'Column4
         '
+        Me.Column4.DataPropertyName = "Level_Name"
         Me.Column4.HeaderText = "المرحلة الدراسية"
         Me.Column4.MaxInputLength = 40000
         Me.Column4.Name = "Column4"
         '
         'Column5
         '
+        Me.Column5.DataPropertyName = "ClassName"
         Me.Column5.HeaderText = "الصف الدراسي"
         Me.Column5.Name = "Column5"
         '
         'Column6
         '
-        Me.Column6.HeaderText = "نشط"
+        Me.Column6.DataPropertyName = "Status"
+        Me.Column6.HeaderText = "الحالة"
         Me.Column6.Name = "Column6"
         '
         'frm_manger_divition
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(835, 500)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.ClientSize = New System.Drawing.Size(626, 469)
+        Me.Controls.Add(Me.btn_exit)
+        Me.Controls.Add(Me.dgv_section)
+        Me.Controls.Add(Me.btn_delete)
+        Me.Controls.Add(Me.btn_edit)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btn_save)
+        Me.Controls.Add(Me.btn_new)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "frm_manger_divition"
         Me.Text = "شاشة الشعب"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv_section, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Status As System.Windows.Forms.CheckBox
+    Friend WithEvents cmb_class As System.Windows.Forms.ComboBox
+    Friend WithEvents cmb_level As System.Windows.Forms.ComboBox
+    Friend WithEvents cmb_year As System.Windows.Forms.ComboBox
+    Friend WithEvents txt_section_name As System.Windows.Forms.TextBox
+    Friend WithEvents txt_section_id As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents btn_exit As System.Windows.Forms.Button
+    Friend WithEvents btn_delete As System.Windows.Forms.Button
+    Friend WithEvents btn_edit As System.Windows.Forms.Button
+    Friend WithEvents btn_save As System.Windows.Forms.Button
+    Friend WithEvents btn_new As System.Windows.Forms.Button
+    Friend WithEvents dgv_section As System.Windows.Forms.DataGridView
     Friend WithEvents Column1 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column2 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents Column3 As System.Windows.Forms.DataGridViewTextBoxColumn
