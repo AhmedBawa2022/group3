@@ -577,5 +577,63 @@ Module Bawa
         Cmd = Nothing
     End Sub
 
+    Public Sub Insert_Tbl_Functional_Data(ByVal Fun_id As Int32, ByVal Emp_Id As Int32, ByVal Enterprise_Name As String, ByVal Role As String, ByVal Function_Date As Date, ByVal Enterprise_Tybe As Int32)
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Insert Into Tbl_Functional_Data ( Fun_id,Emp_Id,Enterprise_Name,Role,Function_Date,Enterprise_Tybe)values(@Fun_id,@Emp_Id,@Enterprise_Name,@Role,@Function_Date,@Enterprise_Tybe)"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@Fun_id", SqlDbType.Int).Value = Fun_id
+            .Parameters.AddWithValue("@Emp_Id", SqlDbType.Int).Value = Emp_Id
+            .Parameters.AddWithValue("@Enterprise_Name", SqlDbType.VarChar).Value = Enterprise_Name
+            .Parameters.AddWithValue("@Role", SqlDbType.VarChar).Value = Role
+            .Parameters.AddWithValue("@Function_Date", SqlDbType.Date).Value = Function_Date
+            '.Parameters.AddWithValue("@End_Date", SqlDbType.Date).Value = End_Date
+            .Parameters.AddWithValue("@Enterprise_Tybe", SqlDbType.Int).Value = Enterprise_Tybe
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم إضافة السجل بنجاح", MsgBoxStyle.Information, "حفظ")
+        Cmd = Nothing
+    End Sub
+
+    Public Sub Update_Tbl_Functional_Data(ByVal End_Date As Date, ByVal Fun_idW As Int32)
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Update Tbl_Functional_Data Set End_Date = @End_Date Where Fun_id = @Fun_id"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@End_Date", SqlDbType.Date).Value = End_Date
+            .Parameters.AddWithValue("@Fun_id", SqlDbType.Int).Value = Fun_idW
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم تعديل السجل بنجاح", MsgBoxStyle.Information, "تعديل")
+        Cmd = Nothing
+    End Sub
+    Public Sub Delete_Tbl_Functional(ByVal ID_Position As Int32)
+
+
+        Dim Cmd As New SqlCommand
+        With Cmd
+            .Connection = Con
+            .CommandType = CommandType.Text
+            .CommandText = "Delete  From Tbl_Functional_Data Where Fun_id = @Fun_id"
+            .Parameters.Clear()
+            .Parameters.AddWithValue("@Fun_id", SqlDbType.Int).Value = ID_Position
+        End With
+        If Con.State = 1 Then Con.Close()
+        Con.Open()
+        Cmd.ExecuteNonQuery()
+        Con.Close()
+        MsgBox("تم حذف السجل.", MsgBoxStyle.Information, "حذف")
+        Cmd = Nothing
+    End Sub
 
 End Module

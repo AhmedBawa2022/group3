@@ -49,4 +49,8 @@
     Private Sub موظفيالمراقبةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles موظفيالمراقبةToolStripMenuItem.Click
 
     End Sub
+
+    Private Sub إضافةوظيفةToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles إضافةوظيفةToolStripMenuItem.Click
+        frm_newFanction.Show()
+    End Sub
 End Class
